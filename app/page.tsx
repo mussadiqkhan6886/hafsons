@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <section className="h-dvh">
-        <h1 className="text-gray-800  font-bold  absolute text-[50px] px-50 -bottom-0 text-center">&apos;&apos;Your Real Estate Partner to help you sell, rent, buy and let.&apos;&apos;</h1>
+        <h1 className="text-gray-800  font-extralight font-serif  absolute text-[50px] px-50 -bottom-0 text-center">&apos;&apos;Your Real Estate Partner to help you sell, rent, buy and let.&apos;&apos;</h1>
         <Image priority fetchPriority="high" src={"/main.jpg"} width={1000} height={1000} alt="main hero image" className="w-full h-[80%]  object-center object-cover " />
       </section>
       <SearchProperty />
