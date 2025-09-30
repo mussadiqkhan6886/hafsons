@@ -1,10 +1,57 @@
+import { footer } from '@/constants'
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
+    <footer className='bg-main  pt-10 flex flex-col gap-10 px-10'>
+      {/* <Image /> */}
+      <div className='flex gap-20'>
+        <h2>HADSONS</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium porro, saepe optio officia, consequatur tenetur minus qui eaque maxime, facere earum ad numquam ratione quia possimus ex doloribus suscipit nam.</p>
+      </div>
+      <div className='flex gap-10 justify-between'>
+        <div className='flex flex-col gap-3'>
+          <h6>Property</h6>
+          <div className='flex gap-2 flex-col'>
+          <Link href="/sales">Property for sale</Link>
+          <Link href={"/lettings"}>Property for rent</Link>
+          <Link href={"/our-projects"}>Projects</Link>
+          </div>
+        </div>
+        <div className='flex flex-col gap-3'>
+          <h6>How can we help?</h6>
+          <div className='flex gap-2 flex-col'>
+            <Link href="/valuation">Value my Property</Link>
+            <Link href={"/contact"}>List my property</Link>
+          </div>
+        </div>
+        <div className='flex flex-col gap-3'>
+          <h6>Business Hours</h6>
+          <div className='flex gap-2 flex-col'>
+            <p>Mon - Fri - 9:00 am - 5:00 pm</p>
+            <p>Saturday - Appointment only</p>
+            <p>Sunday - Closed</p>
+          </div>
+        </div>
+        <div className='flex gap-3 flex-col'>
+          <h6>Reach us</h6>
+          <div className='flex gap-2 flex-col'>
+          <p>0208 679 9353</p>
+          <address>656 Streatham High Road, London, SW16 3QL</address>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>&copy; Copyright Hafsons | All Rights Reserved {new Date().getFullYear()}</p>
+        <p>Credit: <Link className='underline text-blue-700' href={"https://scrupulous.vercel.app"}>Scrupulous</Link></p>
+      </div>
+      <div>
+        <h6>Follow us</h6>
+        {/* icons */}
+      </div>
+    </footer>
   )
 }
 
