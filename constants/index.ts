@@ -55,10 +55,34 @@ export const achivement = [
 ]
 
 export const test = [
-    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
-    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
-    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
-    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
-    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
-    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
-]
+  {
+    name: "Sarah Ahmed",
+    message:
+      "Working with this team was a smooth and stress-free experience. They guided me through the buying process and found the perfect home for my family.",
+  },
+  {
+    name: "James Turner",
+    message:
+      "I rented my property through them and was impressed by the professionalism and speed. Highly recommended for landlords!",
+  },
+  {
+    name: "Ayesha Khan",
+    message:
+      "Their valuation service was spot on. I felt confident selling my house at the right price thanks to their expert advice.",
+  },
+  {
+    name: "Michael Brown",
+    message:
+      "Excellent communication and support throughout the process. They truly care about customer satisfaction and it shows.",
+  },
+  {
+    name: "Fatima Malik",
+    message:
+      "The team made my first-time home buying journey so easy. They answered all my questions and were very supportive.",
+  },
+  {
+    name: "David Wilson",
+    message:
+      "Great service and trustworthy people. I’ve already recommended them to friends looking to buy or rent a property.",
+  },
+];

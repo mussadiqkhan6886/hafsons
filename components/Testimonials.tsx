@@ -30,11 +30,11 @@ const Testimonials = () => {
           key={review.name + i} // better key
         >
           <h5
-            className={`${instrumentSerif.className} text-center leading-[1.2] pt-1 text-[68px]`}
+            className={`${instrumentSerif.className} text-center leading-[1.2] pt-1 text-[60px]`}
           >
             {review.name}
           </h5>
-          <p className="text-lg font-[400]">{review.message}</p>
+          <p className="text-[17px] font-[400]">{review.message}</p>
         </SwiperSlide>
       ))}
     </Swiper>
