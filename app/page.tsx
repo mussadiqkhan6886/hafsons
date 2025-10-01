@@ -6,6 +6,7 @@ import { instrumentSerif } from "@/fonts/font";
 import Image from "next/image";
 import Link from "next/link";
 import About from "@/components/About";
+import WhyUs from "@/components/WhyUs";
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
             <ServiceCard key={service.title} {...service} />
           ))}
         </div>
+          <WhyUs />
       </div>
     </section>
 

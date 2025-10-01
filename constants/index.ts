@@ -23,3 +23,10 @@ export const footer = [
     ],
     }
 ]
+
+export const achivement = [
+    {number : "1500", title: "Premium Property"},
+    {number : "4000+", title: "Happy Customers"},
+    {number : "100+", title: "Award Winning"},
+    {number : "50", title: "Years Experience"},
+]

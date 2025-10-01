@@ -1,13 +1,12 @@
+import { instrumentSerif } from '@/fonts/font'
 import React from 'react'
+import Achivments from './Achivments'
 
 const WhyUs = () => {
   return (
-    <section className='bg-main'>
-      <h3>Why Choose Us?</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloribus consequatur exercitationem beatae voluptatibus repellat inventore repudiandae. Aspernatur, eos. Expedita voluptatibus nihil laborum reiciendis velit quos saepe incidunt necessitatibus facilis!</p>
-      <div>
-        
-      </div>
+    <section className='mt-10'>
+      <h3 className={`${instrumentSerif.className} text-3xl mb-2 text-center`}>Why Choose Us?</h3>
+      <Achivments />
     </section>
   )
 }

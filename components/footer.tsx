@@ -10,7 +10,7 @@ const Footer = () => {
       {/* <Image /> */}
       <div className='flex gap-20'>
         <Image src={"/logo.png"}  alt='logo footer' width={100} height={100} />
-        <p className={`${instrumentSerif.className} text-lg w-[60%]`}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium porro, saepe optio officia, consequatur tenetur minus qui eaque maxime, facere earum ad numquam ratione quia possimus ex doloribus suscipit nam.</p>
+        <p className={`${instrumentSerif.className} text-3xl w-[60%]`}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium porro, saepe optio officia, consequatur tenetur minus qui eaque maxime, facere earum ad numquam ratione quia possimus ex doloribus suscipit nam.</p>
       </div>
       <div className='flex gap-10 justify-between'>
         <div className='flex flex-col gap-3'>
