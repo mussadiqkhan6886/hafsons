@@ -11,7 +11,7 @@ const Footer = () => {
       {/* <Image /> */}
       <div className='flex flex-col md:flex-row gap-10 md:gap-20'>
         <Image src={"/logo.png"}  alt='logo footer' width={130} height={100} />
-        <p className={`${instrumentSerif.className} text-3xl w-full md:w-[60%]`}>We offer the very best services in our field. We never settle for second best and always have your satisfaction as our top priority. It’s who we are and we are proud of it.</p>
+        <p className={`${instrumentSerif.className} text-2xl md:text-3xl w-full md:w-[60%]`}>We offer the very best services in our field. We never settle for second best and always have your satisfaction as our top priority. It’s who we are and we are proud of it.</p>
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-between'>
         <div className='flex flex-col gap-3'>

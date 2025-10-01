@@ -37,7 +37,7 @@ export default function CollapseSection() {
               openIndex === i ? "max-h-96 py-2" : "max-h-0"
             }`}
           >
-            <p className="text-gray-600 font-[400]">{item.content}</p>
+            <p className="text-gray-600 text-sm font-[400]">{item.content}</p>
           </div>
         </div>
       ))}
