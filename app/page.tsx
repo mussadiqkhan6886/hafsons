@@ -9,16 +9,18 @@ import About from "@/components/About";
 import WhyUs from "@/components/WhyUs";
 import Testimonials from "@/components/Testimonials";
 import Title from "@/components/Title";
+import ContactUs from "@/components/ContactUs";
+import Service from "@/components/Service";
 
 export default function Home() {
   return (
     <main>
       <section className="h-dvh">
-        <h1 className={`text-gray-800 w-[80%] absolute text-[50px] bg-main left-35 bottom-8 text-center ${instrumentSerif.className}`}>&apos;&apos;Your Real Estate Partner to help you sell, rent, buy and let.&apos;&apos;</h1>
+        <h1 className={`text-font w-[80%] absolute text-[50px] bg-main left-35 bottom-8 text-center ${instrumentSerif.className}`}>&apos;&apos;Your Real Estate Partner to help you sell, rent, buy and let.&apos;&apos;</h1>
         <Image priority fetchPriority="high" src={"/main.jpg"} width={1000} height={1000} alt="main hero image" className="w-full h-[90%]  object-center object-cover " />
       </section>
       <SearchProperty />
-      <About />
+      {/* <About /> */}
       <section className="relative h-screen">
         <Image src={"/main2.jpg"} alt="main" width={1000} height={1000} className="w-full h-full object-cover object-center" />
         <div className="bg-main left-20 top-20 absolute text-center px-10 py-5 w-[50%] shadow-lg shadow-black/40 ">
@@ -27,18 +29,14 @@ export default function Home() {
           <Link href={"/"} className="text-font underline mt-2">Read More</Link>
         </div>
         <div className="bg-main right-20 bottom-20 absolute text-center px-10 py-5 w-[50%] shadow-lg shadow-black/40 ">
-          <p className={`${instrumentSerif.className} text-4xl`}>50 years Experience, Business built on trust and integrity. Customized plans to fit your needs, Experts in local and international property.</p>
+          <p className={`${instrumentSerif.className} text-font text-4xl`}>50 years Experience, Business built on trust and integrity. Customized plans to fit your needs, Experts in local and international property.</p>
         </div>
       </section>
       <section className="relative min-h-screen bg-gradient-to-br from-white to-slate-50 py-16">
         <div className="mx-auto max-w-6xl px-6 text-center">
-          <Title content="How can we Help You" />
+          <Title content="How can we Help You?" />
 
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => (
-              <ServiceCard key={service.title} {...service} />
-            ))}
-          </div>
+          <Service />
             <WhyUs />
         </div>
       </section>
@@ -46,6 +44,7 @@ export default function Home() {
         <Title content='Kind Words from our Clients' />
         <Testimonials />
       </section>
+      <ContactUs />
       <Valuation />
     </main>
   );

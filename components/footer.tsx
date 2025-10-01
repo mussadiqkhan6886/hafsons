@@ -3,7 +3,7 @@ import { instrumentSerif } from '@/fonts/font'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaEnvelope, FaFacebook, FaInstagram, FaPhone, FaSearchLocation, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
       {/* <Image /> */}
       <div className='flex gap-20'>
         <Image src={"/logo.png"}  alt='logo footer' width={130} height={100} />
-        <p className={`${instrumentSerif.className} text-3xl w-[60%]`}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium porro, saepe optio officia, consequatur tenetur minus qui eaque maxime, facere earum ad numquam ratione quia possimus ex doloribus suscipit nam.</p>
+        <p className={`${instrumentSerif.className} text-3xl w-[60%]`}>We offer the very best services in our field. We never settle for second best and always have your satisfaction as our top priority. It’s who we are and we are proud of it.</p>
       </div>
       <div className='flex gap-10 justify-between'>
         <div className='flex flex-col gap-3'>
@@ -40,8 +40,9 @@ const Footer = () => {
         <div className='flex gap-3 flex-col'>
           <h6 className="font-semibold">Reach us</h6>
           <div className='flex gap-2 flex-col'>
-          <p>0208 679 9353</p>
-          <address>656 Streatham High Road, London, SW16 3QL</address>
+          <p><FaPhone className='inline-block mr-1' /> 0208 679 9353</p>
+          <p><FaEnvelope className='inline-block mr-1' /> info@hafsons.co.uk</p>
+          <address><FaSearchLocation className='inline-block mr-1' /> 656 Streatham High Road, London, SW16 3QL</address>
           </div>
         </div>
       </div>

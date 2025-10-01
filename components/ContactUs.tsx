@@ -3,20 +3,73 @@ import Title from './Title'
 
 const ContactUs = () => {
   return (
-    <section>
-      <Title content='Get in touch' />
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati voluptatibus cumque, quam consequatur ad iure vel sit quas corrupti incidunt, dignissimos minima dolore? Facilis hic mollitia quam amet numquam debitis?</p>
-      <form>
-        <label htmlFor="name">Full Name: </label>
-        <input type="text" id='name' placeholder='Full Name' />
-        <label htmlFor="email">Email: </label>
-        <input type="email" id='email' placeholder='Email' />
-        <label htmlFor="number">Phone Number: </label>
-        <input type="tel" id='number' placeholder='phone number'/>
-        <label htmlFor="message">Message: </label>
-        <textarea  id="message" />
-        <button type='submit'>SEND MESSAGE</button>
-      </form>
+    <section className="relative py-16 px-4 bg-white overflow-hidden">
+
+      <div className="max-w-2xl mx-auto bg-white  rounded-2xl p-8 relative">
+        <Title content="Get in touch" />
+        <p className="text-gray-600 mt-2 mb-6 text-center">
+          Please feel free to get in touch with us via any convenient means 
+          (phone, WhatsApp, email, or by submitting a contact form). 
+          We’ll be glad to answer your questions as soon as possible.
+        </p>
+
+        <form className="space-y-5">
+          <div>
+            <label htmlFor="name" className="block text-sm font-semibold text-gray-700">
+              Full Name:
+            </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Full Name"
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="email" className="block text-sm font-semibold text-gray-700">
+              Email:
+            </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="number" className="block text-sm font-semibold text-gray-700">
+              Phone Number:
+            </label>
+            <input
+              type="tel"
+              id="number"
+              placeholder="Phone Number"
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block text-sm font-semibold text-gray-700">
+              Message:
+            </label>
+            <textarea
+              id="message"
+              rows={4}
+              placeholder="Type your message..."
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full border border-yellow-700 text-yellow-700 font-semibold py-3 shadow-md"
+          >
+            SEND MESSAGE
+          </button>
+        </form>
+      </div>
     </section>
   )
 }

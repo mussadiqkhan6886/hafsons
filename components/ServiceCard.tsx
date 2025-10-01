@@ -1,15 +1,21 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
+import { SwiperSlide } from "swiper/react";
+import "swiper/css/pagination"
+import "swiper/css";
 
-export default function ServiceCard({ title, link, image }: {title: string, link: string, image: string}) {
+export default function ServiceCard({ title, link, image, description }: {title: string, link: string, image: string, description: string}) {
   return (
-    <div className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl flex flex-col">
+    <SwiperSlide className="group bg-white shadow-md h-full transition hover:-translate-y-1 hover:shadow-xl flex flex-col">
       <Link href={link} className="block text-center">
-        <Image src={image} alt={title} width={100} height={100} className="w-full h-[200px] mb-2 rounded" />
-        <h3 className="text-lg uppercase font-semibold text-slate-800 group-hover:text-black">
+        <Image src={image} alt={title} width={100} height={100} className="w-full h-[200px] mb-2 " />
+        <h3 className="text-lg uppercase font-semibold text-font">
           {title}
         </h3>
+        <p className="font-[400] text-sm mb-5 mt-1 px-10 ">{description}</p>
       </Link>
-    </div>
+    </SwiperSlide>
   );
 }

@@ -1,4 +1,5 @@
 export const menu = [
+    {title: "About Us", link: "/about-us"},
     {title: "Services", link: "/services"},
     {title: "Sales", link: "/sales"},
     {title: "Projects", link: "/our-projects"},
@@ -9,10 +10,32 @@ export const menu = [
 ]
 
 export const services = [
-    {title: "Buying", link: "/sales", image: "/services (1).jpg"},
-    {title: "Letting", link: "/lettings", image: "/services (2).jpg"},
-    {title: "Selling", link: "/contact" ,image: "/services (3).jpg"},
-]
+  {
+    title: "Buying",
+    link: "/sales",
+    image: "/services (1).jpg",
+    description: "Find and purchase your dream property with expert guidance."
+  },
+  {
+    title: "Letting or Renting",
+    link: "/lettings",
+    image: "/services (2).jpg",
+    description: "Explore rental options or let out your property hassle-free."
+  },
+  {
+    title: "Selling",
+    link: "/contact",
+    image: "/services (3).jpg",
+    description: "Get the best value and exposure when selling your property."
+  },
+  {
+    title: "Value my home",
+    link: "/contact",
+    image: "/services (3).jpg",
+    description: "Request a free, accurate property valuation today."
+  },
+];
+
 
 export const footer = [
     {title: "Quick Links", items: [

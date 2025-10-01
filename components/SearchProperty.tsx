@@ -15,7 +15,7 @@ const SearchProperty = () => {
           </div>
           <div className='flex flex-col pl-3 flex-2  w-full backdrop-blur-[6px]  bg-gray-200/50'>
             <label htmlFor="search" className='text-sm text-white pt-1'>Location</label>
-            <input type="text" id="search" placeholder="Area or postcode" className="outline-none w-full .5 border-none text-black text-lg" />
+            <input autoComplete='off' type="text" id="search" placeholder="Area or postcode" className="outline-none w-full .5 border-none text-black text-lg" />
             <FaSearch className='absolute right-3 top-5' />
           </div>
         </div>
