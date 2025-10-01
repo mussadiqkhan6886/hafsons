@@ -30,3 +30,12 @@ export const achivement = [
     {number : "100+", title: "Award Winning"},
     {number : "50", title: "Years Experience"},
 ]
+
+export const test = [
+    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
+    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
+    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
+    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
+    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
+    {name: "lorem ", message: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos neque soluta veritatis placeat quibusdam atque porro accusantium, nisi dolore autem quia eaque facilis aliquid impedit quasi voluptate! Neque, iste rem?;"},
+]
