@@ -4,7 +4,7 @@ import { instrumentSerif } from '@/fonts/font'
 import Image from 'next/image'
 import React from 'react'
 
-const page = () => {
+const About = () => {
   return (
     <main>
       <section className='h-[80vh]'>
@@ -40,4 +40,4 @@ const page = () => {
   )
 }
 
-export default page
+export default About
