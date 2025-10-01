@@ -35,7 +35,6 @@ export default function Home() {
       <section className="relative min-h-screen bg-gradient-to-br from-white to-slate-50 py-16">
         <div className="mx-auto max-w-6xl px-6 text-center">
           <Title content="How can we Help You?" />
-
           <Service />
             <WhyUs />
         </div>
