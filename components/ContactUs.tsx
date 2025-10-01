@@ -7,7 +7,7 @@ const ContactUs = () => {
 
       <div className="max-w-2xl mx-auto bg-white  rounded-2xl p-8 relative">
         <Title content="Get in touch" />
-        <p className="text-gray-600 mt-2 mb-6 text-center">
+        <p className="text-gray-600 mt-2 mb-6 text-sm text-center">
           Please feel free to get in touch with us via any convenient means 
           (phone, WhatsApp, email, or by submitting a contact form). 
           We’ll be glad to answer your questions as soon as possible.

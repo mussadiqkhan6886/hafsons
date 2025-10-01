@@ -23,6 +23,13 @@ const Testimonials = () => {
       className="mt-10 h-[40vh]"
       slidesPerView={3}
       spaceBetween={10}
+      breakpoints={{
+        200: {slidesPerView: 1, spaceBetween: 0},
+        320: {slidesPerView: 1, spaceBetween: 0},
+        600: {slidesPerView: 2, spaceBetween: 0},
+        890: { slidesPerView: 2, spaceBetween: 20 },
+        1024: { slidesPerView: 3, spaceBetween: 30 },
+      }}
     >
       {test.map((review, i) => (
         <SwiperSlide
@@ -30,11 +37,11 @@ const Testimonials = () => {
           key={review.name + i} // better key
         >
           <h5
-            className={`${instrumentSerif.className} text-center leading-[1.2] pt-1 text-[60px]`}
+            className={`${instrumentSerif.className} text-center leading-[1.2] pt-1 text-[40px] md:text-[60px]`}
           >
             {review.name}
           </h5>
-          <p className="text-[17px] font-[400]">{review.message}</p>
+          <p className="text-[17px] font-[400] text-gray-700">{review.message}</p>
         </SwiperSlide>
       ))}
     </Swiper>
