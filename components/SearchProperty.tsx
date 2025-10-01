@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa'
 
 const SearchProperty = () => {
   return (
-    <section className="absolute left-0 top-20 md:top-45 w-full px-0 lg:px-25">
+    <section className="absolute left-0 top-20 lg:top-34 w-full px-0 md:px-25">
         <h2 className='text-main text-3xl font-semibold  mb-5 text-center py-2'>Find Your Best Property.</h2>
         <div className="flex gap-1 px-0 lg:px-50 relative">
           <div className='flex px-3 flex-[0.5] flex-col py-1.5 backdrop-blur-[6px]  bg-gray-200/50'>
