@@ -9,9 +9,9 @@ export const menu = [
 ]
 
 export const services = [
-    {title: "Buying", link: "/sales"},
-    {title: "Letting", link: "/lettings"},
-    {title: "Selling", link: "/contact"},
+    {title: "Buying", link: "/sales", image: "/services (1).jpg"},
+    {title: "Letting", link: "/lettings", image: "/services (2).jpg"},
+    {title: "Selling", link: "/contact" ,image: "/services (3).jpg"},
 ]
 
 export const footer = [

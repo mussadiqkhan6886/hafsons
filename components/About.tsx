@@ -10,10 +10,10 @@ const About = () => {
     <div className="flex gap-6 h-full">
         <div className={`flex-1 text-xl font-light`}>
             <h4 className='font-semibold mb-3'>What the business is About?</h4>
-            <p>We offer the very best services in our field. We never settle for second best and always have your satisfaction as our top priority. It’s who we are and we are proud of it.</p>
+            <p className='font-[400]'>We offer the very best services in our field. We never settle for second best and always have your satisfaction as our top priority. It’s who we are and we are proud of it.</p>
            <CollapseSection />
         </div>
-        <Image src={"/imageTeam1.jpeg"} alt="about image" className="h-full w-full flex-1  object-cover object-center" width={500} height={500} />
+        <Image src={"/about.jpg"} alt="about image" className="h-[500px] w-full flex-1  object-contain object-top" width={500} height={500} />
     </div>
     </section>
   )

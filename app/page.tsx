@@ -1,4 +1,3 @@
-import Feature from "@/components/Feature";
 import SearchProperty from "@/components/SearchProperty";
 import ServiceCard from "@/components/ServiceCard";
 import Valuation from "@/components/Valuation";
@@ -17,7 +16,7 @@ export default function Home() {
       </section>
       <SearchProperty />
       <About />
-      <section className="sticky top-0 h-screen">
+      <section className="relative h-screen">
         <Image src={"/main2.jpg"} alt="main" width={1000} height={1000} className="w-full h-full object-cover object-center" />
         <div className="bg-main left-20 top-20 absolute text-center px-10 py-5 w-[50%] shadow-lg shadow-black/40 ">
           <h4 className={`text-4xl mb-2 ${instrumentSerif.className}`}>Request Your Free Valuation</h4>
@@ -28,7 +27,22 @@ export default function Home() {
           <p className={`${instrumentSerif.className} text-4xl`}>50 years Experience, Business built on trust and integrity. Customized plans to fit your needs, Experts in local and international property.</p>
         </div>
       </section>
-      
+      <section className="relative min-h-screen bg-gradient-to-br from-white to-slate-50 py-16">
+      <div className="mx-auto max-w-6xl px-6 text-center">
+        <h4
+          className={`${instrumentSerif.className} text-3xl font-bold text-slate-900 sm:text-4xl`}
+        >
+          How can we Help You
+        </h4>
+
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service) => (
+            <ServiceCard key={service.title} {...service} />
+          ))}
+        </div>
+      </div>
+    </section>
+
       <Valuation />
     </main>
   );

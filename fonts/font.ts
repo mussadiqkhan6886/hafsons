@@ -1,4 +1,4 @@
-import { Playfair_Display, Italianno, Felipa } from "next/font/google";
+import { Playfair_Display, Italianno } from "next/font/google";
 
 export const interTight = Playfair_Display({
   subsets: ["latin"],

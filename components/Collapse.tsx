@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import {FaPlus} from "react-icons/fa"
 
 export default function CollapseSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -29,14 +30,14 @@ export default function CollapseSection() {
             onClick={() => toggle(i)}
             className="cursor-pointer px-4 py-3 font-semibold text-gray-800 transition"
           >
-            {item.title}
+            <FaPlus className="inline-block mr-2 pb-1" /> {item.title}
           </h5>
           <div
             className={`transition-all duration-500 ease-in-out overflow-hidden px-4 ${
               openIndex === i ? "max-h-96 py-2" : "max-h-0"
             }`}
           >
-            <p className="text-gray-600">{item.content}</p>
+            <p className="text-gray-600 font-[400]">{item.content}</p>
           </div>
         </div>
       ))}
