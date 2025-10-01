@@ -85,3 +85,19 @@ export const test = [
       "Great service and trustworthy people. I’ve already recommended them to friends looking to buy or rent a property.",
   },
 ];
+
+
+// 5 images per property
+export const properties = [
+  {featured: false, address: "London", price:12000, description: "", images: ["", "", "", "", ""], type: "buying", size: ""},
+  {featured: true, address: "England more city ", price:145000, description: "", images: ["", "", "", "", ""], type: "letting", size: ""},
+]
+
+export const projects = [
+  {address: "", description:"", price:12300, size: "", images: [""]},
+  {address: "", description:"", price:12300, size: "", images: [""]},
+]
+
+export const team = [
+  {title: "", about: "", role: ""}
+]
