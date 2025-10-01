@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import About from "@/components/About";
 import WhyUs from "@/components/WhyUs";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -29,22 +30,22 @@ export default function Home() {
         </div>
       </section>
       <section className="relative min-h-screen bg-gradient-to-br from-white to-slate-50 py-16">
-      <div className="mx-auto max-w-6xl px-6 text-center">
-        <h4
-          className={`${instrumentSerif.className} text-3xl font-bold text-slate-900 sm:text-4xl`}
-        >
-          How can we Help You
-        </h4>
+        <div className="mx-auto max-w-6xl px-6 text-center">
+          <h4
+            className={`${instrumentSerif.className} text-3xl font-bold text-slate-900 sm:text-4xl`}
+          >
+            How can we Help You
+          </h4>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
-            <ServiceCard key={service.title} {...service} />
-          ))}
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => (
+              <ServiceCard key={service.title} {...service} />
+            ))}
+          </div>
+            <WhyUs />
         </div>
-          <WhyUs />
-      </div>
-    </section>
-
+      </section>
+      <Testimonials />
       <Valuation />
     </main>
   );
