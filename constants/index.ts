@@ -1,9 +1,8 @@
 export const menu = [
     {title: "About Us", link: "/about-us"},
-    {title: "Services", link: "/services"},
     {title: "Sales", link: "/sales"},
     {title: "Projects", link: "/our-projects"},
-    {title: "Lettings", link: "/letting"},
+    {title: "Lettings", link: "/lettings"},
     {title: "Insight", link: "/insight"},
     {title: "Team", link: "/team"},
     {title: "Fees", link: "/fees"},

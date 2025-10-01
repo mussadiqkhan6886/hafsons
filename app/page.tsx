@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Title from "@/components/Title";
 import ContactUs from "@/components/ContactUs";
 import Service from "@/components/Service";
+import Feature from "@/components/Feature";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Image priority fetchPriority="high" src={"/main.jpg"} width={1000} height={1000} alt="main hero image" className="w-full h-[90%]  object-center object-cover " />
       </section>
       <SearchProperty />
+      <Feature />
       <section className="relative h-screen">
         <Image src={"/main2.jpg"} alt="main" width={1000} height={1000} className="w-full h-full object-cover object-center" />
         <div className="bg-main left-20 top-10 md:top-20 absolute text-center px-2 md:px-10 py-5 w-[50%] shadow-lg shadow-black/40 ">
