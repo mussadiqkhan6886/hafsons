@@ -15,20 +15,28 @@ const Lettings = () => {
           <section className='bg-black/20 absolute w-full h-[80vh] left-0 top-0' />
           <Image src={"/aboutHero.jpg"} alt='hero image about' width={1000} height={1000} className='w-full h-full' />
       </section>
-        <section className='flex flex-col gap-10 my-10 px-10'>
-          <Title content='Experts in Residential Lettings' />
-          <section className='grid  grid-cols-1 md:grid-cols-2'>
-            <div className='h-[400px]'>
-              <Image className='w-[60%] h-full object-cover object-top' src={"/about.jpg"} alt='director image' width={100} height={100} />
-            </div>
-            <article>
-              <h5 className='font-bold mb-3 text-xl'>A one-stop shop of honest and insightful lettings advice, guidance and services for landlords</h5>
-              <p className='font-[400]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto voluptatum tempora odio. Rem porro quis quidem sequi asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi quae culpa!asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi quae culpa!asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi quae culpa!</p>
-              <div className='mt-10'>
-                <h5>Sales & Lettings Director</h5>
-                <p>+44 7507 921011</p>
-                <Link href={"/contact"}>Contact Us</Link>
+      <section className='flex flex-col gap-10 my-15 px-20'>
+          <section className='flex flex-col gap-8'>
+            <section className='flex flex-col md:flex-row-reverse gap-10 px-10'>
+              <div className=' border border-gray-200 p-5'>
+                <Title content='Experts in Residential Lettings' />
+                <div className='flex gap-5 items-start mt-5'>
+                  <Image className='w-[60%] h-full object-cover object-top' src={"/about.jpg"} alt='director image' width={100} height={100} />
+                  <div className='mt-10'>
+                    <h5 className='whitespace-nowrap font-semibold'>Sales & Lettings Director</h5>
+                    <p>+44 7507 921011</p>
+                    <Link href={"/contact"}>Contact Us</Link>
+                  </div>
+                </div>
               </div>
+              <div className='flex-1 '>
+                <p className='w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur in dicta aliquid blanditiis ratione iste nulla nectetur adipisicing elit. Tenetur architecto voluptatum tempora odio. Rem porro quis quidem sequi asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi ectetur adipisicing elit. Tenetur architecto voluptatum tempora odio. Rem porro quis quidem sequi asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi ectetur adipisicing elit. Tenetur architecto voluptatum tempora odio. Rem porro quis quidem sequi asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi esciunt, sapiente unde dignissimos molestias quaerat quia doloremque nobis tempora, id consequatur mollitia ab!</p>
+              </div>
+            </section>
+            <article>
+              <h5 className='font-bold mb-3 w-[60%] text-3xl'>A one-stop shop of honest and insightful lettings advice, guidance and services for landlords</h5>
+              <p className='font-[400]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto voluptatum tempora odio. Rem porro quis quidem sequi asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi ectetur adipisicing elit. Tenetur architecto voluptatum tempora odio. Rem porro quis quidem sequi asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi ectetur adipisicing elit. Tenetur architecto voluptatum tempora odio. Rem porro quis quidem sequi asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi quae culpa!asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi quae culpa!asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi quae culpa!</p>
+              
             </article>
           </section>
         </section>
