@@ -1,11 +1,11 @@
-import { Inter_Tight, Instrument_Serif } from "next/font/google";
+import { Playfair_Display, Italianno, Felipa } from "next/font/google";
 
-export const interTight = Inter_Tight({
+export const interTight = Playfair_Display({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-export const instrumentSerif = Instrument_Serif({
+export const instrumentSerif = Italianno({
   subsets: ["latin"],
   weight: ["400"]
 });
