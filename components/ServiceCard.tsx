@@ -14,7 +14,7 @@ export default function ServiceCard({ title, link, image, description }: {title:
         <h3 className="text-lg uppercase font-semibold text-font">
           {title}
         </h3>
-        <p className="font-[400] text-sm mb-5 mt-1 px-10 ">{description}</p>
+        <p className="font-[400] text-sm mb-5 mt-1 px-7 md:px-10 ">{description}</p>
       </Link>
     </SwiperSlide>
   );

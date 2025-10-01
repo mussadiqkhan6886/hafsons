@@ -7,7 +7,7 @@ import { FaEnvelope, FaFacebook, FaInstagram, FaPhone, FaSearchLocation, FaTwitt
 
 const Footer = () => {
   return (
-    <footer className={`bg-main pt-10 flex flex-col gap-5 md:gap-10 px-10`}>
+    <footer className={`bg-main pt-10 flex flex-col gap-5 md:gap-10 px-7`}>
       {/* <Image /> */}
       <div className='flex flex-col md:flex-row gap-10 md:gap-20'>
         <Image src={"/logo.png"}  alt='logo footer' width={130} height={100} />
@@ -39,14 +39,14 @@ const Footer = () => {
         </div>
         <div className='flex gap-3 flex-col'>
           <h6 className="font-semibold">Reach us</h6>
-          <div className='flex gap-2 flex-col'>
+          <div className='flex gap-2 flex-col text-sm'>
           <p><FaPhone className='inline-block mr-1' /> 0208 679 9353</p>
           <p><FaEnvelope className='inline-block mr-1' /> info@hafsons.co.uk</p>
           <address><FaSearchLocation className='inline-block mr-1' /> 656 Streatham High Road, London, SW16 3QL</address>
           </div>
         </div>
       </div>
-      <div>
+      <div className='text-sm'>
         <p>&copy; Copyright Hafsons | All Rights Reserved {new Date().getFullYear()}</p>
         <p>Credit: <Link className='underline text-blue-700' href={"https://scrupulous.vercel.app"}>Scrupulous</Link></p>
       </div>
