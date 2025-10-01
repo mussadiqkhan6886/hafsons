@@ -3,6 +3,7 @@ import SearchProperty from "@/components/SearchProperty";
 import ServiceCard from "@/components/ServiceCard";
 import Valuation from "@/components/Valuation";
 import { services } from "@/constants";
+import { instrumentSerif } from "@/fonts/font";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,18 +11,10 @@ export default function Home() {
   return (
     <main>
       <section className="h-dvh">
-        <h1 className="text-gray-800  font-extralight font-serif  absolute text-[50px] px-50 -bottom-0 text-center">&apos;&apos;Your Real Estate Partner to help you sell, rent, buy and let.&apos;&apos;</h1>
+        <h1 className={`text-gray-800  absolute text-[56px] bg-white px-45 -bottom-0 text-center ${instrumentSerif.className}`}>&apos;&apos;Your Real Estate Partner to help you sell, rent, buy and let.&apos;&apos;</h1>
         <Image priority fetchPriority="high" src={"/main.jpg"} width={1000} height={1000} alt="main hero image" className="w-full h-[80%]  object-center object-cover " />
       </section>
       <SearchProperty />
-      {/* <section className="sticky top-0 py-10 h-full bg-white">
-        <h2 className="font-bold text-3xl text-center">Services</h2>
-        <div className="flex justify-center mt-2 gap-20">
-        {services.map(service => (
-          <ServiceCard key={service.title} {...service} />
-        ))}
-        </div>
-      </section> */}
       <section className="pt-10 sticky top-0 min-h-screen bg-main flex flex-col gap-5 px-20 ">
         <h3 className="text-center text-3xl font-semibold">ABOUT US</h3>
         <div className="flex gap-6 h-full">
