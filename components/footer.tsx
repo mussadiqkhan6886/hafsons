@@ -7,13 +7,13 @@ import { FaEnvelope, FaFacebook, FaInstagram, FaPhone, FaSearchLocation, FaTwitt
 
 const Footer = () => {
   return (
-    <footer className={`bg-main pt-10 flex flex-col gap-10 px-10`}>
+    <footer className={`bg-main pt-10 flex flex-col gap-5 md:gap-10 px-10`}>
       {/* <Image /> */}
-      <div className='flex gap-20'>
+      <div className='flex flex-col md:flex-row gap-10 md:gap-20'>
         <Image src={"/logo.png"}  alt='logo footer' width={130} height={100} />
-        <p className={`${instrumentSerif.className} text-3xl w-[60%]`}>We offer the very best services in our field. We never settle for second best and always have your satisfaction as our top priority. It’s who we are and we are proud of it.</p>
+        <p className={`${instrumentSerif.className} text-3xl w-full md:w-[60%]`}>We offer the very best services in our field. We never settle for second best and always have your satisfaction as our top priority. It’s who we are and we are proud of it.</p>
       </div>
-      <div className='flex gap-10 justify-between'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-between'>
         <div className='flex flex-col gap-3'>
           <h6 className="font-semibold">Property</h6>
           <div className='flex gap-2 flex-col'>
