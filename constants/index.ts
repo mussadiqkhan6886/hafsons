@@ -95,7 +95,7 @@ export const properties = [
     address: "Théoule-sur-Mer",
     price: 29000000,
     description: "Stunning estate with 360° French Riviera sea views, rare elevated position.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "buying",
     size: "1000 m² (24000 m² land)"
   },
@@ -104,7 +104,7 @@ export const properties = [
     address: "Mougins",
     price: 25000000,
     description: "Contemporary villa built in 2020, private gardens, 1,123 m² of luxury.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "buying",
     size: "1123 m² (13149 m² land)"
   },
@@ -113,7 +113,7 @@ export const properties = [
     address: "Cap d'Antibes",
     price: 24500000,
     description: "Seafront villa with tennis court and pool on 8,200 m² land.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "buying",
     size: "512 m² (8200 m² land)"
   },
@@ -122,7 +122,7 @@ export const properties = [
     address: "Cap d'Antibes",
     price: 17000000,
     description: "Charming Provençal farmhouse renovated into a luxury villa.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "buying",
     size: "600 m² (5200 m² land)"
   },
@@ -131,7 +131,7 @@ export const properties = [
     address: "Villefranche-sur-Mer",
     price: 10500000,
     description: "Elegant Belle Époque villa with sweeping bay views, near Monaco.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "buying",
     size: "430 m² (1370 m² land)"
   },
@@ -140,7 +140,7 @@ export const properties = [
     address: "French Riviera",
     price: 12100000,
     description: "Waterfront villa between Cannes & Saint-Tropez, rare jewel.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "buying",
     size: "310 m² (2000 m² land)"
   },
@@ -149,7 +149,7 @@ export const properties = [
     address: "Mougins",
     price: 11900000,
     description: "Family villa with 6 ensuite bedrooms, private Domaine setting.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "buying",
     size: "427 m² (10491 m² land)"
   },
@@ -158,7 +158,7 @@ export const properties = [
     address: "Théoule-sur-Mer",
     price: 11850000,
     description: "Unique seafront property with direct private sea access.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "buying",
     size: "417 m²"
   },
@@ -167,7 +167,7 @@ export const properties = [
     address: "Mougins – Panoramic Views",
     price: 0, // POA
     description: "Contemporary villa with panoramic sea & mountain views.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "buying",
     size: "570 m² (7000 m² land)"
   },
@@ -176,7 +176,7 @@ export const properties = [
     address: "Cannes Hillside",
     price: 8600000,
     description: "Modern hillside villa overlooking Cannes, private pool & gardens.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "buying",
     size: "350 m² (5000 m² land)"
   },
@@ -187,7 +187,7 @@ export const properties = [
     address: "London City Apartment",
     price: 5000,
     description: "Luxury 3-bedroom apartment in Central London with skyline views.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "letting",
     size: "120 m²"
   },
@@ -196,7 +196,7 @@ export const properties = [
     address: "Manchester Riverside Loft",
     price: 2800,
     description: "Stylish loft overlooking the river, modern design & balcony.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "letting",
     size: "95 m²"
   },
@@ -205,7 +205,7 @@ export const properties = [
     address: "Birmingham Luxury Penthouse",
     price: 4500,
     description: "Exclusive penthouse with private rooftop terrace and city views.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "letting",
     size: "140 m²"
   },
@@ -214,7 +214,7 @@ export const properties = [
     address: "Leeds City Centre Flat",
     price: 2200,
     description: "2-bedroom flat near Leeds station, perfect for professionals.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "letting",
     size: "85 m²"
   },
@@ -223,7 +223,7 @@ export const properties = [
     address: "Cambridge Student Housing",
     price: 1600,
     description: "Affordable modern housing for students near university.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "letting",
     size: "70 m²"
   },
@@ -232,7 +232,7 @@ export const properties = [
     address: "Liverpool Marina Apartment",
     price: 2500,
     description: "Waterfront apartment with marina views and private balcony.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "letting",
     size: "100 m²"
   },
@@ -241,7 +241,7 @@ export const properties = [
     address: "Oxford Cottage",
     price: 3200,
     description: "Quaint 3-bedroom cottage in historic Oxfordshire countryside.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "letting",
     size: "110 m²"
   },
@@ -250,7 +250,7 @@ export const properties = [
     address: "Bristol Modern Duplex",
     price: 2700,
     description: "Contemporary duplex with open-plan living and river views.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "letting",
     size: "125 m²"
   },
@@ -259,7 +259,7 @@ export const properties = [
     address: "Nottingham Family House",
     price: 1800,
     description: "4-bedroom family home with large garden and parking.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "letting",
     size: "150 m²"
   },
@@ -268,7 +268,7 @@ export const properties = [
     address: "Newcastle Executive Flat",
     price: 2900,
     description: "Executive 2-bedroom apartment with premium amenities.",
-    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    images: ["/prop.jpg", "/prop.jpg"],
     type: "letting",
     size: "105 m²"
   }
@@ -282,7 +282,7 @@ export const projects = [
       "A modern residential development offering premium apartments with easy access to local amenities and transport links.",
     price: 100000,
     size: "850 sq ft",
-    images: ["/project.jpeg", "/project.jpeg", "/project.jpeg", "/project.jpeg"],
+    images: ["/project.jpeg", "/project.jpeg"],
     slug: "garratt-lane-development",
     location: "Garratt Lane, Earlsfield",
   },
@@ -292,7 +292,7 @@ export const projects = [
       "A sustainable housing project designed with eco-friendly materials and contemporary architecture.",
     price: 12300,
     size: "720 sq ft",
-    images: ["/project.jpeg", "/project.jpeg", "/project.jpeg", "/project.jpeg"],
+    images: ["/project.jpeg", "/project.jpeg"],
     slug: "green-lane",
     location: "Green Lane, London",
   },
@@ -302,7 +302,7 @@ export const projects = [
       "A high-quality mixed-use development featuring both commercial spaces and modern living apartments.",
     price: 12300,
     size: "900 sq ft",
-    images: ["/project.jpeg", "/project.jpeg", "/project.jpeg", "/project.jpeg"],
+    images: ["/project.jpeg", "/project.jpeg"],
     slug: "streatham-high-road",
     location: "Streatham High Road, London",
   },
@@ -312,7 +312,7 @@ export const projects = [
       "Elegant apartments located in the heart of London Road with convenient access to transport and retail hubs.",
     price: 12300,
     size: "780 sq ft",
-    images: ["/project.jpeg", "/project.jpeg", "/project.jpeg", "/project.jpeg"],
+    images: ["/project.jpeg", "/project.jpeg"],
     slug: "london-road",
     location: "London Road, London",
   },
@@ -322,7 +322,7 @@ export const projects = [
       "A boutique residential project combining modern design with historic charm in the lively Collision Passage area.",
     price: 12300,
     size: "950 sq ft",
-    images: ["/project.jpeg", "/project.jpeg", "/project.jpeg", "/project.jpeg"],
+    images: ["/project.jpeg", "/project.jpeg"],
     slug: "collision-passage-development",
     location: "Collision Passage, London",
   },
