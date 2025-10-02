@@ -101,7 +101,7 @@ export const projects = [
       "A modern residential development offering premium apartments with easy access to local amenities and transport links.",
     price: 100000,
     size: "850 sq ft",
-    images: ["/project.jpeg", "/project.jpeg","/project.jpeg","/project.jpeg","/project.jpeg"],
+    images: ["/project.jpeg", "/project.jpeg", "/project.jpeg", "/project.jpeg"],
     slug: "garratt-lane-development",
     location: "Garratt Lane, Earlsfield",
   },
@@ -111,7 +111,7 @@ export const projects = [
       "A sustainable housing project designed with eco-friendly materials and contemporary architecture.",
     price: 12300,
     size: "720 sq ft",
-    images: ["/project.jpeg", "/project.jpeg","/project.jpeg","/project.jpeg","/project.jpeg"],
+    images: ["/project.jpeg", "/project.jpeg", "/project.jpeg", "/project.jpeg"],
     slug: "green-lane",
     location: "Green Lane, London",
   },
@@ -121,7 +121,7 @@ export const projects = [
       "A high-quality mixed-use development featuring both commercial spaces and modern living apartments.",
     price: 12300,
     size: "900 sq ft",
-    images: ["/project.jpeg", "/project.jpeg","/project.jpeg","/project.jpeg","/project.jpeg"],
+    images: ["/project.jpeg", "/project.jpeg", "/project.jpeg", "/project.jpeg"],
     slug: "streatham-high-road",
     location: "Streatham High Road, London",
   },
@@ -131,7 +131,7 @@ export const projects = [
       "Elegant apartments located in the heart of London Road with convenient access to transport and retail hubs.",
     price: 12300,
     size: "780 sq ft",
-    images: ["/project.jpeg", "/project.jpeg","/project.jpeg","/project.jpeg","/project.jpeg"],
+    images: ["/project.jpeg", "/project.jpeg", "/project.jpeg", "/project.jpeg"],
     slug: "london-road",
     location: "London Road, London",
   },
@@ -141,11 +141,12 @@ export const projects = [
       "A boutique residential project combining modern design with historic charm in the lively Collision Passage area.",
     price: 12300,
     size: "950 sq ft",
-    images: ["/project.jpeg", "/project.jpeg","/project.jpeg","/project.jpeg","/project.jpeg"],
+    images: ["/project.jpeg", "/project.jpeg", "/project.jpeg", "/project.jpeg"],
     slug: "collision-passage-development",
     location: "Collision Passage, London",
   },
-]
+];
+
 
 
 export const team = [

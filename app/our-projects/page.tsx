@@ -44,18 +44,19 @@ const page = () => {
             <Link
               href={`/our-projects/${project.slug}`}
               key={project.slug}
-              className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
+              className="group relative shadow-md hover:shadow-xl transition"
             >
               <Image
                 src={project.images[0]}
                 alt={project.slug}
                 width={400}
                 height={300}
-                className="w-full h-60 object-cover group-hover:scale-105 transition duration-300"
+                className="w-full object-cover group-hover:scale-105 transition duration-300"
               />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <div className="absolute inset-0 bg-font/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
                 <h4 className="text-white text-lg font-medium">{project.title}</h4>
               </div>
+                <h4 className="text-black group-hover:opacity-0 p-3 font-medium">{project.title}</h4>
             </Link>
           ))}
         </div>

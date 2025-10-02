@@ -1,4 +1,6 @@
 import { projects } from '@/constants'
+import { instrumentSerif } from '@/fonts/font'
+import Image from 'next/image'
 import React from 'react'
 
 
@@ -17,12 +19,27 @@ const page = async ({params}: {params: Promise<{slug: string}>}) => {
     if(!data) return <main>No Data Found</main>
 
   return (
-    <main className='pt-25'>
-      <h1>{data.title}</h1>
-
-      <div>
-        
-      </div>
+    <main className='pt-25 pb-10'>
+      <h1 className={`${instrumentSerif.className} text-[100px] mb-10 text-center`}>{data.title}</h1>
+      <section className='flex gap-10 items-start max-w-5xl mx-auto'>
+        <div>
+            <h2 className='mb-4 font-medium text-2xl'>Gallery</h2>
+            <div className='grid grid-cols-2 gap-3'>
+                {data.images.map((image, i) => (
+                    <Image key={i} src={image} alt='image' width={300} height={300} />
+                ))}
+            </div>
+        </div>
+        <div className='flex gap-5 flex-col pt-10'>
+            <h3 className='font-medium'>Location: <span className='text-xl font-bold'>{data.location}</span></h3>
+            <h3 className='font-medium'>Price: <span className='text-xl font-bold'>{data.price}</span></h3>
+            <h3 className='font-medium'>Size: <span className='text-xl font-bold'>{data.size}</span></h3>
+            <div>
+                <h3 className='font-bold text-lg'>Description:</h3>
+                <p className='max-w-xl'>{data.description}</p>
+            </div>
+        </div>
+      </section>
     </main>
   )
 }
