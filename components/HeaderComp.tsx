@@ -11,7 +11,7 @@ const HeaderComp = () => {
   
     const [open,setOpen] = useState(false)
   const pathname = usePathname()
-  const path = pathname.match("/fees") || pathname.match("/contact") || pathname.match("/insights") || pathname.match("/our-projects/")
+  const path = pathname.match("/fees") || pathname.match("/contact") || pathname.match("/insights") || pathname.match("/our-projects/") || pathname.match("/valuation")
 
   return (
     <header className={`${path ? "text-black" : "text-white"}  backdrop-blur-sm items-center px-5 md:px-10 py-2 justify-between flex w-full absolute z-50 `}>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { interTight } from "@/fonts/font";
+import HeaderComp from "@/components/HeaderComp";
+import FooterComp from "@/components/FooterComp";
 
 
 export const metadata: Metadata = {
@@ -19,8 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${interTight.className} antialiased`}>
-        
+        <HeaderComp />
         {children}
+        <FooterComp />
       </body>
     </html>
   );

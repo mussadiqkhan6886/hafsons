@@ -30,9 +30,7 @@ const Valuation = () => {
       {/* Form Section */}
       <div className="max-w-3xl mx-auto px-6">
         <div className="bg-white shadow-xl rounded-2xl p-8 md:p-10">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6 text-center">
-            Request Your Free Valuation
-          </h2>
+          
           <ValuationForm />
         </div>
       </div>

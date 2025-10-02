@@ -8,7 +8,6 @@ import "swiper/css/pagination"
 import "swiper/css";
 import { properties } from '@/constants';
 import Link from 'next/link';
-import { instrumentSerif } from '@/fonts/font';
 
 const FeatureProperties = () => {
 

@@ -15,21 +15,28 @@ export default function ValuationForm() {
     phone: "",
     contactMethod: "Don't mind",
   })
+  const [error, setError] = useState("")
+  const [result, setResult] = useState("")
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const handleNext = () => setStep(2)
+  const handleNext = () => {
+    if(formData.address && formData.date && formData.time){
+      setStep(2)
+    }else{
+      setError("Please Fill Form")
+    }
+  }
   const handleBack = () => setStep(1)
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form Submitted:", formData)
-    alert("Your valuation request has been submitted ✅")
+    setResult("Your valuation request has been submitted ")
   }
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white rounded-2xl shadow-lg mt-10">
+    <div className="max-w-2xl mx-auto p-6 mt-10">
       <h2 className="text-2xl font-bold mb-6 text-center">
         {step === 1 ? "Request a Valuation" : "Step 2"}
       </h2>
@@ -69,6 +76,7 @@ export default function ValuationForm() {
                 value={formData.time}
                 onChange={handleChange}
                 className="w-full border rounded-lg p-2"
+                required
               >
                 <option>Any</option>
                 <option>Morning</option>
@@ -77,10 +85,11 @@ export default function ValuationForm() {
               </select>
             </div>
 
+            <p className="text-red-600">{error}</p>
             <button
               type="button"
               onClick={handleNext}
-              className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+              className="w-full border-font border cursor-pointer py-2 "
             >
               Next →
             </button>
@@ -193,9 +202,10 @@ export default function ValuationForm() {
                 type="submit"
                 className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition"
               >
-                Submit ✅
+                Submit 
               </button>
             </div>
+              <p className="text-green-600">{result}</p>
           </>
         )}
       </form>
