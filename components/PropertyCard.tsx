@@ -38,11 +38,11 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         {/* Header */}
         <div>
             <Link href={`${type === "buying" ? "sales" : "lettings"}/${address}`}></Link>
-          <h3 className={`${instrumentSerif.className} text-[60px] leading-9`}>{address}</h3>
+          <h3 className={`${instrumentSerif.className} text-[45px] sm:text-[60px] leading-9`}>{address}</h3>
           <h4 className="text-lg text-font font-bold mt-1">
             {price === 0 ? "POA" : "$" + price.toLocaleString()}
           </h4>
-          <h4 className="text-sm text-gray-500">{size} • {type}</h4>
+          <h4 className="text-[12px] sm:text-sm text-gray-500">{size} • {type}</h4>
         </div>
 
         {/* Description */}

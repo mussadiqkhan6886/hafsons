@@ -2,7 +2,7 @@ import React from "react";
 
 const Filteration = ({length, cat} : {length: number, cat:string}) => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between gap-4 p-4 px-10 bg-gray-50 rounded-lg shadow-sm">
+    <section className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 px-10 bg-gray-50 rounded-lg shadow-sm">
       {/* Left - Properties Count */}
       <div>
         <p className="text-gray-700 font-medium">

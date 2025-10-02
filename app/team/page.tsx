@@ -19,7 +19,7 @@ const Page = () => {
       </section>
 
       {/* Intro Section */}
-      <section className="text-center px-6 md:px-12 py-16">
+      <section className="text-center px-3 md:px-12 py-16">
         <h1
           className={`${instrumentSerif.className} text-4xl md:text-5xl font-bold text-gray-900 mb-6`}
         >

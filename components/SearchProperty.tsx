@@ -7,7 +7,7 @@ const SearchProperty = () => {
         <h2 className='text-main text-3xl font-semibold  mb-5 text-center py-2'>Find Your Best Property.</h2>
         <div className="flex gap-1 px-0 lg:px-50 relative">
           <div className='flex px-3 flex-[0.5] flex-col py-1.5 backdrop-blur-[6px]  bg-gray-200/50'>
-            <label className='inline-block pl-1 text-sm text-white' htmlFor="buy or let">I want to</label>
+            <label className='inline-block pl-1 text-[12px] sm:text-sm text-white' htmlFor="buy or let">I want to</label>
             <select id='buy or let' className='outline-none text-black'>
               <option value="buy">Buy</option>
               <option  value="let">Let</option>

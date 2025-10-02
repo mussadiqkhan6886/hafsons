@@ -9,9 +9,9 @@ const Page = () => {
       {/* Heading */}
       <div className="text-center mb-14">
         <h1
-          className={`${instrumentSerif.className} text-4xl md:text-5xl font-bold text-gray-900 mb-4`}
+          className={`${instrumentSerif.className} text-4xl md:text-6xl font-bold text-gray-900 mb-4`}
         >
-          HAFSONS – Landlord Fee Schedule
+          Hafsons – Landlord Fee Schedule
         </h1>
         <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
           At Hafsons, we are committed to providing <span className="font-semibold">transparent</span> 
@@ -39,8 +39,8 @@ const Page = () => {
               <h4 className="text-gray-800 font-semibold  mb-3">{item.include}</h4>
               <ul className="space-y-2">
                 {item.points.map((point, i) => (
-                  <li key={i} className="flex gap-2 text-gray-700">
-                    <FaCircle className="text-primary w-5 h-5 mt-0.5" />
+                  <li key={i} className="flex items-start gap-2 text-gray-700">
+                    <FaCircle className="text-primary w-2 h-2 mt-1.5" />
                     <span className='text-sm font-[400]'>{point}</span>
                   </li>
                 ))}

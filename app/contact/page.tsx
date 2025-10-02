@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone, FaSearchLocation } from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <main className="max-w-7xl mx-auto px-6 md:px-12 pt-25 py-16">
+    <main className="max-w-7xl mx-auto px-4 md:px-12 pt-25 py-16">
       {/* Header */}
       <section className="text-center mb-12">
         <h1 className={`${instrumentSerif.className} text-4xl md:text-5xl font-bold text-gray-900 mb-4`}>

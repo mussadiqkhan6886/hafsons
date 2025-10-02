@@ -8,12 +8,12 @@ const page = () => {
   return (
     <main className="pt-24 pb-16 px-6 md:px-12 lg:px-20 bg-gray-50">
       {/* Title */}
-      <h1 className={`${instrumentSerif.className} text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800`}>
+      <h1 className={`${instrumentSerif.className} text-4xl md:text-5xl text-center mb-12 text-gray-800`}>
         Insights
       </h1>
 
       {/* Grid Layout */}
-      <section className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <section className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {insights.map((item, i) => (
           <div
             key={i}

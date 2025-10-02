@@ -19,7 +19,7 @@ const HeaderComp = () => {
         <Image src={"/logo.png"} alt='logo' height={100} width={100} />
       </Link>
       <div className='hidden md:block'>
-        <ul className='flex gap-7'>
+        <ul className='flex gap-5 lg:gap-7'>
             {menu.map(item => (
                 <li key={item.title}><Link className={`hover:border-b text-sm hover:font-normal  hover:text-primary hover:border-orange-300 pb-0.5 transition-all duration-200 ease-in-out border-transparent uppercase font-thin`} href={item.link}>{item.title}</Link></li>
             ))}

@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <section className="relative  px-4 bg-white overflow-hidden">
 
-      <div className="max-w-2xl mx-auto bg-white  rounded-2xl p-8 relative">
+      <div className="max-w-2xl mx-auto p-0 md:p-8 relative">
         <Title content="Get in touch" />
         <p className="text-gray-600 mt-2 mb-6 text-sm text-center">
           Please feel free to get in touch with us via any convenient means 

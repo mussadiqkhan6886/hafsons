@@ -1,5 +1,6 @@
 import SearchProperty from '@/components/SearchProperty'
 import { projects } from '@/constants'
+import { instrumentSerif } from '@/fonts/font'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -16,7 +17,7 @@ const page = () => {
           height={1000}
           className="absolute inset-0 w-full h-full object-cover brightness-75"
         />
-        <h1 className="relative text-white text-5xl font-bold text-center">
+        <h1 className={`absolute bottom-5 text-[80px] sm:text-[100px] text-white font-bold text-center ${instrumentSerif.className}`}>
           Our Projects
         </h1>
       </section>
@@ -28,7 +29,7 @@ const page = () => {
 
       {/* About Section */}
       <section className="max-w-6xl mx-auto px-4 py-12 text-center space-y-6">
-        <h2 className="text-3xl font-semibold">Welcome to Hafsons Company</h2>
+        <h2 className="text-3xl font-semibold">Welcome to <span className={`${instrumentSerif.className} text-5xl`}>Hafsons</span> Company</h2>
         <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto">
           At Hafsons Company, we believe in transforming dreams into reality. As a leading name in the real estate industry, 
           we take immense pride in our commitment to quality, innovation, and customer satisfaction. 
