@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import React, { useState } from 'react'
 import { FaHamburger } from 'react-icons/fa';
 
-const Header = () => {
+const HeaderComp = () => {
   
     const [open,setOpen] = useState(false)
   const pathname = usePathname()
@@ -40,4 +40,4 @@ const Header = () => {
 }
 
 
-export default Header
+export default HeaderComp

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FaEnvelope, FaFacebook, FaInstagram, FaPhone, FaSearchLocation, FaTwitter } from 'react-icons/fa'
 
-const Footer = () => {
+const FooterComp = () => {
   return (
      <footer className={`bg-main pt-10 flex flex-col gap-5 md:gap-10 px-7`}>
       {/* <Image /> */}
@@ -61,4 +61,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default FooterComp
