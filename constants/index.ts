@@ -99,7 +99,10 @@ export const projects = [
 ]
 
 export const team = [
-  {title: "", about: "", role: ""}
+  {name: "Amaan", image: "/imageTeam1.jpeg", role: "Estate Director"},
+  {name: "Asim", image: "/imageTeam2.jpeg", role: "Property Development Director"},
+  {name: "Aamer", image: "/imageTeam3.jpeg", role: "Finance Director"},
+  {name: "Maz", image: "/imageTeam4.jpeg", role: "Property Management Director"},
 ]
 
 export const fees = [
