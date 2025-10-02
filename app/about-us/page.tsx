@@ -1,4 +1,3 @@
-import About from '@/components/About'
 import Title from '@/components/Title'
 import { instrumentSerif } from '@/fonts/font'
 import Image from 'next/image'
