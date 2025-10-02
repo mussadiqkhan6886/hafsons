@@ -1,18 +1,20 @@
 'use client';
 
 import { menu } from '@/constants'
-import { instrumentSerif } from '@/fonts/font'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 import { FaHamburger } from 'react-icons/fa'
 
 const Header = () => {
 
   const [open,setOpen] = useState(false)
+  const pathname = usePathname()
+  const path = pathname.match("/fees")
 
   return (
-    <header className='text-white  backdrop-blur-sm items-center px-5 md:px-10 py-2 justify-between flex w-full absolute z-50 '>
+    <header className={`${path ? "text-black" : "text-white"}  backdrop-blur-sm items-center px-5 md:px-10 py-2 justify-between flex w-full absolute z-50 `}>
       <Link href={"/"}>
         <Image src={"/logo.png"} alt='logo' height={100} width={100} />
       </Link>

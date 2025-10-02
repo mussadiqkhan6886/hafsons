@@ -103,7 +103,39 @@ export const team = [
 ]
 
 export const fees = [
-  {heading: "Let Only Service", subheading: "Fee: 8% of the total annual rent", include: "Includes", points: []},
-  {heading: "Rent Collection Service", subheading: "Fee: 10% of the monthly rent", include: "Includes all Let Only services, plus:", points: []},
-  {heading: "Full Management Service", subheading: "Fee: 12% of the monthly rent", include: "Includes all Let Only and Rent Collection services, plus:", points: []},
-]
+  {
+    heading: "Let Only Service",
+    subheading: "Fee: 8% of the total annual rent",
+    include: "Includes",
+    points: [
+      "Rental valuation and marketing of the property",
+      "Conducting viewings and tenant referencing",
+      "Drafting tenancy agreement",
+      "Collecting initial rent and deposit",
+      "Registering the deposit with a government-approved scheme"
+    ]
+  },
+  {
+    heading: "Rent Collection Service",
+    subheading: "Fee: 10% of the monthly rent",
+    include: "Includes all Let Only services, plus:",
+    points: [
+      "Monthly rent collection",
+      "Monthly statements",
+      "Chasing late payments",
+      "Advising on rent arrears and next steps"
+    ]
+  },
+  {
+    heading: "Full Management Service",
+    subheading: "Fee: 12% of the monthly rent",
+    include: "Includes all Let Only and Rent Collection services, plus:",
+    points: [
+      "Property inspections every 3–6 months with written reports",
+      "Handling repairs and maintenance",
+      "Managing tenant queries",
+      "Serving legal notices (e.g., Section 21 or 8)",
+      "End-of-tenancy check-out and deposit return process"
+    ]
+  }
+];
