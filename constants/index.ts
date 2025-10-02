@@ -3,7 +3,7 @@ export const menu = [
     {title: "Sales", link: "/sales"},
     {title: "Projects", link: "/our-projects"},
     {title: "Lettings", link: "/lettings"},
-    {title: "Insight", link: "/insight"},
+    {title: "Insight", link: "/insights"},
     {title: "Team", link: "/team"},
     {title: "Fees", link: "/fees"},
     {title: "Contact", link: "/contact"},
@@ -141,5 +141,90 @@ export const fees = [
       "Serving legal notices (e.g., Section 21 or 8)",
       "End-of-tenancy check-out and deposit return process"
     ]
+  }
+];
+
+export const insights = [
+  {
+    title: "Best Questions to Ask When Viewing a Property",
+    image: "/insightImage.jpg",
+    date: "10 Mar 2024",
+    category: "Buying Guide",
+    description: `
+      Choosing the right home for your family is exciting, but it can be a lot of work. Buying a house is no easy game; it is daunting even if you are not a first-time buyer. 
+      Even with a great and experienced real estate agent, locating and reviewing homes takes time and energy. As buying a home is typically the single most expensive purchase 
+      you will ever make, we recommend you be careful and extra conscious. For the same reason, we advise you to prepare a list of possible questions that you may ask when 
+      looking for a property. These questions will help you understand more about the property in detail and will equip you to make informed decisions.
+
+      • What is the area like?  
+      • How old is the roof?  
+      • How old is the heating and cooling system?  
+      • Are there any easements?  
+      • For how long have owners lived there?  
+      • Has major renovation been done recently?  
+      • What is the water pressure like?  
+      • What is included in the sale?  
+      • Leasehold or freehold check  
+
+      With this, we conclude a list of possible questions you may ask before viewing a property. Getting answers in advance can help you with the homebuying process.
+      At Hafsons, we can help you find the best property and related services as per your requirements.
+    `,
+    linkText: "Read More",
+    slug: "best-questions-to-ask-when-viewing-a-property"
+  },
+  {
+    title: "Housing Benefits Expected to Lag Behind Rising Rents by 14% in 2025",
+    date: "04 Jan 2024",
+    image: "/insightImage.jpg",
+    category: "Market Insights",
+    description: `
+      A new forecast shows that housing benefits are expected to lag behind rising rents by around 14% in 2025. 
+      This widening gap could make it harder for low-income households to secure affordable accommodation and may put additional 
+      pressure on both landlords and tenants. Policymakers and property managers will need to pay attention to this trend as it 
+      directly impacts affordability in the rental market.
+    `,
+    linkText: "Read More",
+    slug: "housing-benefits-rising-rents-2025"
+  },
+  {
+    title: "Property Management & Tax Benefits",
+    image: "/insightImage.jpg",
+    date: "11 Dec 2023",
+    category: "Property Management",
+    description: `
+      Property management is more than just handling tenant issues—it can also bring tax benefits. 
+      From expense deductions to depreciation and capital gains planning, landlords who manage their properties effectively 
+      (or hire professional management services) can maximize returns while minimizing liabilities. 
+      Knowing these tax advantages is crucial for long-term profitability.
+    `,
+    linkText: "Read More",
+    slug: "property-management-tax-benefits"
+  },
+  {
+    title: "Renting out furnished or unfurnished: What works best?",
+    image: "/insightImage.jpg",
+    date: "21 Nov 2023",
+    category: "Renting Out",
+    description: `
+      Deciding whether to rent out a property furnished or unfurnished can affect tenant demand and rental income. 
+      Furnished properties often attract short-term tenants and can yield higher rents, while unfurnished homes 
+      usually appeal to long-term tenants who want to personalize the space. Landlords should weigh flexibility, 
+      tenant type, and ongoing maintenance costs before making the decision.
+    `,
+    linkText: "Read More",
+    slug: "renting-furnished-vs-unfurnished"
+  },
+  {
+    title: "Top tips for selling home with the best deals",
+    date: "21 Nov 2023",
+    image: "/insightImage.jpg",
+    category: "Selling Tips",
+    description: `
+      Selling a home requires strategy, presentation, and timing. From staging your home for buyers to setting the right price, 
+      small decisions can make a big difference in securing the best deal. Professional photography, decluttering, and understanding 
+      market demand are essential steps. With the right approach, sellers can maximize their property’s value and sell faster. 
+    `,
+    linkText: "Read More",
+    slug: "top-tips-for-selling-home"
   }
 ];
