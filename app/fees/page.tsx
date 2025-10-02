@@ -1,7 +1,7 @@
 import { fees } from '@/constants'
 import { instrumentSerif } from '@/fonts/font'
 import React from 'react'
-import { CheckCircle2 } from 'lucide-react' // for icons
+import { FaCircle } from 'react-icons/fa' // for icons
 
 const Page = () => {
   return (
@@ -40,7 +40,7 @@ const Page = () => {
               <ul className="space-y-2">
                 {item.points.map((point, i) => (
                   <li key={i} className="flex gap-2 text-gray-700">
-                    <CheckCircle2 className="text-primary w-5 h-5 mt-0.5" />
+                    <FaCircle className="text-primary w-5 h-5 mt-0.5" />
                     <span className='text-sm font-[400]'>{point}</span>
                   </li>
                 ))}
