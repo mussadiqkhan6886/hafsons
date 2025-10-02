@@ -2,11 +2,11 @@ import { insights } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
 
-export const generateStaticParams = () => {
-  return insights.map(item => ({
-    slug: item.slug,   
-  }))
-}
+// export const generateStaticParams = () => {
+//   return insights.map(item => ({
+//     slug: item.slug,   
+//   }))
+// }
 
 
 const page = async ({params}: {params: Promise<{slug: string}>}) => {

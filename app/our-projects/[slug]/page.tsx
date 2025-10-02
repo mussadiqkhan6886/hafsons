@@ -4,11 +4,11 @@ import Image from 'next/image'
 import React from 'react'
 
 
-export const generateStaticParams = () => {
-  return projects.map(item => ({
-    slug: item.slug,   
-  }))
-}
+// export const generateStaticParams = () => {
+//   return projects.map(item => ({
+//     slug: item.slug,   
+//   }))
+// }
 
 
 const page = async ({params}: {params: Promise<{slug: string}>}) => {
