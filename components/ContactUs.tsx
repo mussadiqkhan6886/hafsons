@@ -3,7 +3,7 @@ import Title from './Title'
 
 const ContactUs = () => {
   return (
-    <section className="relative py-16 px-4 bg-white overflow-hidden">
+    <section className="relative  px-4 bg-white overflow-hidden">
 
       <div className="max-w-2xl mx-auto bg-white  rounded-2xl p-8 relative">
         <Title content="Get in touch" />

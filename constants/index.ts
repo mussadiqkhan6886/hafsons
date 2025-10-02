@@ -6,6 +6,7 @@ export const menu = [
     {title: "Insight", link: "/insight"},
     {title: "Team", link: "/team"},
     {title: "Fees", link: "/fees"},
+    {title: "Contact", link: "/contact"},
 ]
 
 export const services = [
