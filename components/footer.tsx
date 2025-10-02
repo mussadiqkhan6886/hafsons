@@ -6,7 +6,7 @@ import { FaEnvelope, FaFacebook, FaInstagram, FaPhone, FaSearchLocation, FaTwitt
 
 const Footer = () => {
   return (
-    <footer className={`bg-main pt-10 flex flex-col gap-5 md:gap-10 px-7`}>
+     <footer className={`bg-main pt-10 flex flex-col gap-5 md:gap-10 px-7`}>
       {/* <Image /> */}
       <div className='flex flex-col md:flex-row gap-10 md:gap-20'>
         <Image src={"/logo.png"}  alt='logo footer' width={130} height={100} />

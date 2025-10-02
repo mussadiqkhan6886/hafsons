@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { interTight } from "@/fonts/font";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { interTight } from "@/fonts/font";
 
 
 export const metadata: Metadata = {

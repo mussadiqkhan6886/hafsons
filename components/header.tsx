@@ -1,15 +1,15 @@
 'use client';
 
-import { menu } from '@/constants'
-import Image from 'next/image'
-import Link from 'next/link'
+import { menu } from '@/constants';
+import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useState } from 'react'
-import { FaHamburger } from 'react-icons/fa'
+import { FaHamburger } from 'react-icons/fa';
 
 const Header = () => {
-
-  const [open,setOpen] = useState(false)
+  
+    const [open,setOpen] = useState(false)
   const pathname = usePathname()
   const path = pathname.match("/fees") || pathname.match("/contact") || pathname.match("/insights") || pathname.match("/our-projects/")
 
@@ -38,5 +38,6 @@ const Header = () => {
     </header>
   )
 }
+
 
 export default Header
