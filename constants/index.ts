@@ -95,9 +95,58 @@ export const properties = [
 ]
 
 export const projects = [
-  {address: "", description:"", price:12300, size: "", images: [""]},
-  {address: "", description:"", price:12300, size: "", images: [""]},
+  {
+    title: "Garratt Lane Development",
+    description:
+      "A modern residential development offering premium apartments with easy access to local amenities and transport links.",
+    price: 100000,
+    size: "850 sq ft",
+    images: ["/project.jpeg", "/project.jpeg","/project.jpeg","/project.jpeg","/project.jpeg"],
+    slug: "garratt-lane-development",
+    location: "Garratt Lane, Earlsfield",
+  },
+  {
+    title: "Green Lane",
+    description:
+      "A sustainable housing project designed with eco-friendly materials and contemporary architecture.",
+    price: 12300,
+    size: "720 sq ft",
+    images: ["/project.jpeg", "/project.jpeg","/project.jpeg","/project.jpeg","/project.jpeg"],
+    slug: "green-lane",
+    location: "Green Lane, London",
+  },
+  {
+    title: "Streatham High Road",
+    description:
+      "A high-quality mixed-use development featuring both commercial spaces and modern living apartments.",
+    price: 12300,
+    size: "900 sq ft",
+    images: ["/project.jpeg", "/project.jpeg","/project.jpeg","/project.jpeg","/project.jpeg"],
+    slug: "streatham-high-road",
+    location: "Streatham High Road, London",
+  },
+  {
+    title: "London Road",
+    description:
+      "Elegant apartments located in the heart of London Road with convenient access to transport and retail hubs.",
+    price: 12300,
+    size: "780 sq ft",
+    images: ["/project.jpeg", "/project.jpeg","/project.jpeg","/project.jpeg","/project.jpeg"],
+    slug: "london-road",
+    location: "London Road, London",
+  },
+  {
+    title: "Collision Passage Development",
+    description:
+      "A boutique residential project combining modern design with historic charm in the lively Collision Passage area.",
+    price: 12300,
+    size: "950 sq ft",
+    images: ["/project.jpeg", "/project.jpeg","/project.jpeg","/project.jpeg","/project.jpeg"],
+    slug: "collision-passage-development",
+    location: "Collision Passage, London",
+  },
 ]
+
 
 export const team = [
   {name: "Amaan", image: "/imageTeam1.jpeg", role: "Estate Director"},
