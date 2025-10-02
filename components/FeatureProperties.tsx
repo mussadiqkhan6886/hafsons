@@ -6,8 +6,12 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination"
 import "swiper/css";
+import { properties } from '@/constants';
+import Link from 'next/link';
+import { instrumentSerif } from '@/fonts/font';
 
 const FeatureProperties = () => {
+
   return (
     <Swiper
          modules={[Pagination]}
@@ -24,91 +28,18 @@ const FeatureProperties = () => {
         1024: { slidesPerView: 4, spaceBetween: 30 },
       }}
     >
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-full' src={"/services (1).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-[200px]' src={"/services (2).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-full' src={"/services (3).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-full' src={"/services (1).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-[200px]' src={"/services (2).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-full' src={"/services (3).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-full' src={"/services (1).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-[200px]' src={"/services (2).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-full' src={"/services (3).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-full' src={"/services (1).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-[200px]' src={"/services (2).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='w-full'>
-            <Image className='w-full h-full' src={"/services (3).jpg"} alt='' width={100} height={100} />
-        </div>
-        <h3 className='text-center font-xl font-bold'>139999$</h3>
-        <p className='text-center font-[400]'>LONDON</p>
-      </SwiperSlide>
-      
+      {properties.filter(item => item.featured).map((item, i) => (
+        <SwiperSlide key={i}>
+          <Link href={`/${item.type === "buying" ? "sales" : "lettings"}/${item.address}`}>
+            <div className='w-full'>
+              <h3 className={`absolute text-xl text-black left-2 top-2 px-2 bg-main`}>{item.type}</h3>
+                <Image className='w-full h-full' src={item.images[0]} alt={item.address} width={100} height={100} />
+            </div>
+            <h3 className='text-center font-xl font-bold'>${item.price}</h3>
+            <p className='text-center font-[400]'>{item.address}</p>
+          </Link>
+        </SwiperSlide>
+      )) }
     </Swiper>
   )
 }

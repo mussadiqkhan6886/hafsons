@@ -40,7 +40,7 @@ const Footer = () => {
           <h6 className="font-semibold">Reach us</h6>
           <div className='flex gap-2 flex-col text-sm'>
           <p><FaPhone className='inline-block mr-1' /> 0208 679 9353</p>
-          <p><FaEnvelope className='inline-block mr-1' /> info@hafsons.co.uk</p>
+          <Link href={"mailto:info@hafsons.co.uk"}><FaEnvelope className='inline-block mr-1' /> info@hafsons.co.uk</Link>
           <address><FaSearchLocation className='inline-block mr-1' /> 656 Streatham High Road, London, SW16 3QL</address>
           </div>
         </div>
