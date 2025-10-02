@@ -14,8 +14,8 @@ const Valuation = () => {
         </h1>
         <p className="text-gray-700 text-lg leading-relaxed">
           Our professional valuation service provides you with an accurate,
-          market-driven assessment of your property’s worth. Whether you are
-          selling, renting, or simply curious about your property’s current
+          market-driven assessment of your property worth. Whether you are
+          selling, renting, or simply curious about your property current
           value, our team uses a combination of local market knowledge, recent
           sales data, and property insights to deliver a clear, reliable
           valuation.
