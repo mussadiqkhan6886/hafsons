@@ -1,12 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import { interTight } from '@/fonts/font'
 import CollapseSection from './Collapse'
 
 const About = () => {
   return (
     <section className="pt-10  min-h-screen flex flex-col gap-5 px-5 md:px-10 lg:px-20 ">
-    <h3 className={`text-center text-4xl font-bold mb-3 ${interTight.className}`}>ABOUT US</h3>
+    <h3 className={`text-center text-4xl font-bold mb-3`}>ABOUT US</h3>
     <div className="flex flex-col md:flex-row gap-6 h-full">
         <div className={`flex-1 text-xl font-light`}>
             <h4 className='font-semibold mb-3'>What the business is About?</h4>

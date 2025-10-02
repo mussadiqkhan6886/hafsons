@@ -24,7 +24,7 @@ export default function Home() {
         <div className="bg-main left-20 top-10 md:top-20 absolute text-center px-2 md:px-10 py-5 w-[50%] shadow-lg shadow-black/40 ">
           <h4 className={`text-3xl md:text-4xl mb-2 ${instrumentSerif.className}`}>Request Your Free Valuation</h4>
           <p className="md:text-lg text-sm font-thin ">Our local experts will provide a free, no-obligation property valuation.</p>
-          <Link href={"/valuation"} className="text-font underline mt-2">Read More</Link>
+          <Link href={"/valuation"} className="text-font underline mt-2">Read More about valuation</Link>
         </div>
         <div className="bg-main lg:right-0 bottom-0 md:right-20 md:bottom-20 absolute text-center px-10 py-5 w-full md:w-[50%] shadow-lg shadow-black/40 ">
           <p className={`${instrumentSerif.className} text-font text-xl sm:text-2xl md:text-3xl lg:text-4xl`}>50 years Experience, Business built on trust and integrity. Customized plans to fit your needs, Experts in local and international property.</p>

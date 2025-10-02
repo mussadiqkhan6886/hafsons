@@ -10,7 +10,7 @@ export default function ServiceCard({ title, link, image, description }: {title:
   return (
     <SwiperSlide className="group bg-white shadow-md h-full transition hover:-translate-y-1 hover:shadow-xl flex flex-col">
       <Link href={link} className="block text-center">
-        <Image src={image} alt={title} width={100} height={100} className="w-full h-[200px] mb-2 " />
+        <Image src={image} alt={title} width={100} height={100} className="w-full h-[200px] mb-2 object-cover object-bottom" />
         <h3 className="text-lg uppercase font-semibold text-font">
           {title}
         </h3>

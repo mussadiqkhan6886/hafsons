@@ -5,7 +5,7 @@ import { properties } from '@/constants'
 import { instrumentSerif } from '@/fonts/font'
 import React from 'react'
 
-const page = () => {
+const Sales = () => {
 
    const total = properties.filter(item => item.type === "buying")
   const totalL = total.length
@@ -31,4 +31,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Sales

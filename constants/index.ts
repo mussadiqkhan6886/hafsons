@@ -91,6 +91,7 @@ export const test = [
 export const properties = [
   // -------- BUYING (10) --------
   {
+    id: 20,
     featured: true,
     address: "Théoule-sur-Mer",
     price: 29000000,
@@ -100,6 +101,7 @@ export const properties = [
     size: "1000 m² (24000 m² land)"
   },
   {
+    id: 19,
     featured: false,
     address: "Mougins",
     price: 25000000,
@@ -109,6 +111,7 @@ export const properties = [
     size: "1123 m² (13149 m² land)"
   },
   {
+    id: 18,
     featured: true,
     address: "Cap d'Antibes",
     price: 24500000,
@@ -118,6 +121,7 @@ export const properties = [
     size: "512 m² (8200 m² land)"
   },
   {
+    id: 17,
     featured: false,
     address: "Cap d'Antibes",
     price: 17000000,
@@ -127,6 +131,7 @@ export const properties = [
     size: "600 m² (5200 m² land)"
   },
   {
+    id: 16,
     featured: true,
     address: "Villefranche-sur-Mer",
     price: 10500000,
@@ -136,6 +141,7 @@ export const properties = [
     size: "430 m² (1370 m² land)"
   },
   {
+    id: 15,
     featured: false,
     address: "French Riviera",
     price: 12100000,
@@ -145,6 +151,7 @@ export const properties = [
     size: "310 m² (2000 m² land)"
   },
   {
+    id: 14,
     featured: true,
     address: "Mougins",
     price: 11900000,
@@ -154,6 +161,7 @@ export const properties = [
     size: "427 m² (10491 m² land)"
   },
   {
+    id: 13,
     featured: false,
     address: "Théoule-sur-Mer",
     price: 11850000,
@@ -163,6 +171,7 @@ export const properties = [
     size: "417 m²"
   },
   {
+    id: 12,
     featured: false,
     address: "Mougins – Panoramic Views",
     price: 0, // POA
@@ -172,6 +181,7 @@ export const properties = [
     size: "570 m² (7000 m² land)"
   },
   {
+    id: 11,
     featured: false,
     address: "Cannes Hillside",
     price: 8600000,
@@ -183,6 +193,7 @@ export const properties = [
 
   // -------- LETTING (10) --------
   {
+    id: 10,
     featured: true,
     address: "London City Apartment",
     price: 5000,
@@ -192,6 +203,7 @@ export const properties = [
     size: "120 m²"
   },
   {
+    id: 9,
     featured: false,
     address: "Manchester Riverside Loft",
     price: 2800,
@@ -201,6 +213,7 @@ export const properties = [
     size: "95 m²"
   },
   {
+    id: 8,
     featured: true,
     address: "Birmingham Luxury Penthouse",
     price: 4500,
@@ -210,6 +223,7 @@ export const properties = [
     size: "140 m²"
   },
   {
+    id: 7,
     featured: false,
     address: "Leeds City Centre Flat",
     price: 2200,
@@ -219,6 +233,7 @@ export const properties = [
     size: "85 m²"
   },
   {
+    id: 6,
     featured: false,
     address: "Cambridge Student Housing",
     price: 1600,
@@ -228,6 +243,7 @@ export const properties = [
     size: "70 m²"
   },
   {
+    id: 5,
     featured: false,
     address: "Liverpool Marina Apartment",
     price: 2500,
@@ -237,6 +253,7 @@ export const properties = [
     size: "100 m²"
   },
   {
+    id: 4,
     featured: true,
     address: "Oxford Cottage",
     price: 3200,
@@ -246,6 +263,7 @@ export const properties = [
     size: "110 m²"
   },
   {
+    id: 3,
     featured: false,
     address: "Bristol Modern Duplex",
     price: 2700,
@@ -255,6 +273,7 @@ export const properties = [
     size: "125 m²"
   },
   {
+    id: 2,
     featured: false,
     address: "Nottingham Family House",
     price: 1800,
@@ -264,6 +283,7 @@ export const properties = [
     size: "150 m²"
   },
   {
+    id: 1,
     featured: true,
     address: "Newcastle Executive Flat",
     price: 2900,

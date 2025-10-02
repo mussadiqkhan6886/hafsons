@@ -14,7 +14,7 @@ const FooterComp = () => {
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between'>
         <div className='flex flex-col gap-3'>
-          <h6 className="font-semibold">Property</h6>
+          <h5 className="font-semibold">Property</h5>
           <div className='flex gap-2 flex-col'>
           <Link href="/sales">Property for sale</Link>
           <Link href={"/lettings"}>Property for rent</Link>
@@ -22,14 +22,14 @@ const FooterComp = () => {
           </div>
         </div>
         <div className='flex flex-col gap-3'>
-          <h6 className="font-semibold">How can we help?</h6>
+          <h5 className="font-semibold">How can we help?</h5>
           <div className='flex gap-2 flex-col'>
             <Link href="/valuation">Value my Property</Link>
             <Link href={"/contact"}>List my property</Link>
           </div>
         </div>
         <div className='flex flex-col gap-3'>
-          <h6 className="font-semibold">Business Hours</h6>
+          <h5 className="font-semibold">Business Hours</h5>
           <div className='flex gap-2 flex-col'>
             <p>Mon - Fri - 9:00 am - 5:00 pm</p>
             <p>Saturday - Appointment only</p>
@@ -37,7 +37,7 @@ const FooterComp = () => {
           </div>
         </div>
         <div className='flex gap-3 flex-col'>
-          <h6 className="font-semibold">Reach us</h6>
+          <h5 className="font-semibold">Reach us</h5>
           <div className='flex gap-2 flex-col text-sm'>
           <p><FaPhone className='inline-block mr-1' /> 0208 679 9353</p>
           <Link href={"mailto:info@hafsons.co.uk"}><FaEnvelope className='inline-block mr-1' /> info@hafsons.co.uk</Link>
@@ -50,7 +50,7 @@ const FooterComp = () => {
         <p>Credit: <Link className='underline text-blue-700' href={"https://scrupulous.vercel.app"}>Scrupulous</Link></p>
       </div>
       <div className='flex gap-5 items-center mb-6'>
-        <h6>Follow us: </h6>
+        <h5>Follow us: </h5>
         <div className='flex gap-4 items-center'>
           <FaFacebook />
           <FaInstagram />

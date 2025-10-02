@@ -29,7 +29,7 @@ const FeatureProperties = () => {
     >
       {properties.filter(item => item.featured).map((item, i) => (
         <SwiperSlide key={i}>
-          <Link href={`/${item.type === "buying" ? "sales" : "lettings"}/${item.address}`}>
+          <Link href={`/${item.type === "buying" ? "sales" : "lettings"}/${item.id}`}>
             <div className='w-full'>
               <h3 className={`absolute text-xl text-black left-2 top-2 px-2 bg-main`}>{item.type}</h3>
                 <Image className='w-full h-full' src={item.images[0]} alt={item.address} width={100} height={100} />

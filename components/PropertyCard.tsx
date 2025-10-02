@@ -10,6 +10,7 @@ interface PropertyCardProps {
   images: string[];
   type: string;
   size: string;
+  id: number
 }
 
 const PropertyCard: React.FC<PropertyCardProps> = ({
@@ -19,6 +20,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
   images,
   type,
   size,
+  id
 }) => {
   return (
     <div className="bg-white  shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col md:flex-row">
@@ -37,8 +39,9 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
       <div className="p-6 flex flex-col justify-between w-full md:w-1/2">
         {/* Header */}
         <div>
-            <Link href={`${type === "buying" ? "sales" : "lettings"}/${address}`}></Link>
-          <h3 className={`${instrumentSerif.className} text-[45px] sm:text-[60px] leading-9`}>{address}</h3>
+            <Link href={`${type === "buying" ? "sales" : "lettings"}/${id}`}>
+              <h3 className={`${instrumentSerif.className} hover:text-font text-[45px] sm:text-[60px] leading-9`}>{address}</h3>
+            </Link>
           <h4 className="text-lg text-font font-bold mt-1">
             {price === 0 ? "POA" : "$" + price.toLocaleString()}
           </h4>
