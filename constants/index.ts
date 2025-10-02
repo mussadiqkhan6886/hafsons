@@ -101,3 +101,9 @@ export const projects = [
 export const team = [
   {title: "", about: "", role: ""}
 ]
+
+export const fees = [
+  {heading: "Let Only Service", subheading: "Fee: 8% of the total annual rent", include: "Includes", points: []},
+  {heading: "Rent Collection Service", subheading: "Fee: 10% of the monthly rent", include: "Includes all Let Only services, plus:", points: []},
+  {heading: "Full Management Service", subheading: "Fee: 12% of the monthly rent", include: "Includes all Let Only and Rent Collection services, plus:", points: []},
+]
