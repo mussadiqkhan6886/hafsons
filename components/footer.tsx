@@ -1,4 +1,3 @@
-import { footer } from '@/constants'
 import { instrumentSerif } from '@/fonts/font'
 import Image from 'next/image'
 import Link from 'next/link'

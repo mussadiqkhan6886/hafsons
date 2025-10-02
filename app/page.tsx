@@ -1,11 +1,8 @@
 import SearchProperty from "@/components/SearchProperty";
-import ServiceCard from "@/components/ServiceCard";
 import Valuation from "@/components/Valuation";
-import { services } from "@/constants";
 import { instrumentSerif } from "@/fonts/font";
 import Image from "next/image";
 import Link from "next/link";
-import About from "@/components/About";
 import WhyUs from "@/components/WhyUs";
 import Testimonials from "@/components/Testimonials";
 import Title from "@/components/Title";

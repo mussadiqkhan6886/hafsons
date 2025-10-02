@@ -1,4 +1,3 @@
-import { instrumentSerif } from '@/fonts/font'
 import React from 'react'
 import Achivments from './Achivments'
 import Title from './Title'

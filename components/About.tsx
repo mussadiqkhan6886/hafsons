@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { instrumentSerif, interTight } from '@/fonts/font'
+import { interTight } from '@/fonts/font'
 import CollapseSection from './Collapse'
 
 const About = () => {

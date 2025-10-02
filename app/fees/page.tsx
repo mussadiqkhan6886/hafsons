@@ -1,4 +1,3 @@
-import Title from '@/components/Title'
 import { fees } from '@/constants'
 import { instrumentSerif } from '@/fonts/font'
 import React from 'react'
