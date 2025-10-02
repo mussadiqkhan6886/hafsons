@@ -88,11 +88,192 @@ export const test = [
 ];
 
 
-// 5 images per property
 export const properties = [
-  {featured: false, address: "London", price:12000, description: "", images: ["", "", "", "", ""], type: "buying", size: ""},
-  {featured: true, address: "England more city ", price:145000, description: "", images: ["", "", "", "", ""], type: "letting", size: ""},
-]
+  // -------- BUYING (10) --------
+  {
+    featured: true,
+    address: "Théoule-sur-Mer",
+    price: 29000000,
+    description: "Stunning estate with 360° French Riviera sea views, rare elevated position.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "buying",
+    size: "1000 m² (24000 m² land)"
+  },
+  {
+    featured: false,
+    address: "Mougins",
+    price: 25000000,
+    description: "Contemporary villa built in 2020, private gardens, 1,123 m² of luxury.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "buying",
+    size: "1123 m² (13149 m² land)"
+  },
+  {
+    featured: true,
+    address: "Cap d'Antibes",
+    price: 24500000,
+    description: "Seafront villa with tennis court and pool on 8,200 m² land.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "buying",
+    size: "512 m² (8200 m² land)"
+  },
+  {
+    featured: false,
+    address: "Cap d'Antibes",
+    price: 17000000,
+    description: "Charming Provençal farmhouse renovated into a luxury villa.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "buying",
+    size: "600 m² (5200 m² land)"
+  },
+  {
+    featured: true,
+    address: "Villefranche-sur-Mer",
+    price: 10500000,
+    description: "Elegant Belle Époque villa with sweeping bay views, near Monaco.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "buying",
+    size: "430 m² (1370 m² land)"
+  },
+  {
+    featured: false,
+    address: "French Riviera",
+    price: 12100000,
+    description: "Waterfront villa between Cannes & Saint-Tropez, rare jewel.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "buying",
+    size: "310 m² (2000 m² land)"
+  },
+  {
+    featured: true,
+    address: "Mougins",
+    price: 11900000,
+    description: "Family villa with 6 ensuite bedrooms, private Domaine setting.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "buying",
+    size: "427 m² (10491 m² land)"
+  },
+  {
+    featured: false,
+    address: "Théoule-sur-Mer",
+    price: 11850000,
+    description: "Unique seafront property with direct private sea access.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "buying",
+    size: "417 m²"
+  },
+  {
+    featured: false,
+    address: "Mougins – Panoramic Views",
+    price: 0, // POA
+    description: "Contemporary villa with panoramic sea & mountain views.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "buying",
+    size: "570 m² (7000 m² land)"
+  },
+  {
+    featured: false,
+    address: "Cannes Hillside",
+    price: 8600000,
+    description: "Modern hillside villa overlooking Cannes, private pool & gardens.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "buying",
+    size: "350 m² (5000 m² land)"
+  },
+
+  // -------- LETTING (10) --------
+  {
+    featured: true,
+    address: "London City Apartment",
+    price: 5000,
+    description: "Luxury 3-bedroom apartment in Central London with skyline views.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "letting",
+    size: "120 m²"
+  },
+  {
+    featured: false,
+    address: "Manchester Riverside Loft",
+    price: 2800,
+    description: "Stylish loft overlooking the river, modern design & balcony.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "letting",
+    size: "95 m²"
+  },
+  {
+    featured: true,
+    address: "Birmingham Luxury Penthouse",
+    price: 4500,
+    description: "Exclusive penthouse with private rooftop terrace and city views.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "letting",
+    size: "140 m²"
+  },
+  {
+    featured: false,
+    address: "Leeds City Centre Flat",
+    price: 2200,
+    description: "2-bedroom flat near Leeds station, perfect for professionals.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "letting",
+    size: "85 m²"
+  },
+  {
+    featured: false,
+    address: "Cambridge Student Housing",
+    price: 1600,
+    description: "Affordable modern housing for students near university.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "letting",
+    size: "70 m²"
+  },
+  {
+    featured: false,
+    address: "Liverpool Marina Apartment",
+    price: 2500,
+    description: "Waterfront apartment with marina views and private balcony.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "letting",
+    size: "100 m²"
+  },
+  {
+    featured: true,
+    address: "Oxford Cottage",
+    price: 3200,
+    description: "Quaint 3-bedroom cottage in historic Oxfordshire countryside.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "letting",
+    size: "110 m²"
+  },
+  {
+    featured: false,
+    address: "Bristol Modern Duplex",
+    price: 2700,
+    description: "Contemporary duplex with open-plan living and river views.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "letting",
+    size: "125 m²"
+  },
+  {
+    featured: false,
+    address: "Nottingham Family House",
+    price: 1800,
+    description: "4-bedroom family home with large garden and parking.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "letting",
+    size: "150 m²"
+  },
+  {
+    featured: true,
+    address: "Newcastle Executive Flat",
+    price: 2900,
+    description: "Executive 2-bedroom apartment with premium amenities.",
+    images: ["/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg", "/prop.jpg"],
+    type: "letting",
+    size: "105 m²"
+  }
+];
+
 
 export const projects = [
   {

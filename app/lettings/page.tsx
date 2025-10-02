@@ -1,10 +1,17 @@
+import Filteration from '@/components/Filteration'
+import PropertyCard from '@/components/PropertyCard'
 import Title from '@/components/Title'
+import { properties } from '@/constants'
 import { instrumentSerif } from '@/fonts/font'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Lettings = () => {
+
+  const total = properties.filter(item => item.type === "letting")
+  const totalL = total.length
+
   return (
     <main>
       <section className='h-[80vh]'>
@@ -35,16 +42,20 @@ const Lettings = () => {
             </section>
             <article className='mt-5'>
               <h5 className='font-bold mb-3 w-[60%] text-3xl'>A one-stop shop of honest and insightful lettings advice, guidance and services for landlords</h5>
-              <p className='font-[400]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto voluptatum tempora odio. Rem porro quis quidem sequi asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi ectetur adipisicing elit. Tenetur architecto voluptatum tempora odio. Rem porro quis quidem sequi asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi ectetur adipisicing elit. Tenetur architecto voluptatum tempora odio. Rem porro quis quidem sequi asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi quae culpa!asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi quae culpa!asperiores, cupiditate quaerat praesentium perferendis nisi reprehenderit voluptatem distinctio quasi quae culpa!</p>
+              <p className='font-[400]'>This includes how to best present your property for a successful let; marketing your property locally, nationally and internationally to our wide database of applicants; negotiating between you and your applicant to get the right tenancy terms; creating a robust tenancy agreement to suit all parties; and keeping you informed with legislative requirements including health and safety and the relevant consents and conditions for letting your property. We have different levels of service so you can choose what’s best for you. You can either manage your property yourself, or we can look after it throughout your journey as a landlord and take responsibility for its management. Whichever you choose, our teams will guide you every step of your journey with us.</p>
               
             </article>
           </section>
         </section>
         <div>
           <Title content='Property for Letting' />
-          <button>View all Properties</button>
+          <Filteration length={totalL} cat={"Letting"} />
         </div>
-        {/* Prop */}
+        <section className='px-10 flex flex-col gap-7 pb-10'>
+          {properties.filter(item => item.type === "letting").map((item, i) => (
+            <PropertyCard key={i} {...item} />
+          ))}
+        </section>
     </main>
   )
 }
