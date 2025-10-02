@@ -175,7 +175,7 @@ export default function ValuationForm() {
                 onChange={handleChange}
                 className="w-full border rounded-lg p-2"
               >
-                <option>Don't mind</option>
+                <option>Don&apos;t mind</option>
                 <option>Phone</option>
                 <option>Email</option>
               </select>
