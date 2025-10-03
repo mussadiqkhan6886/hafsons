@@ -1,19 +1,41 @@
+'use client';
+
 import { properties } from '@/constants'
 import { instrumentSerif } from '@/fonts/font'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-export const generateStaticParams = () => {
-  return properties.filter(item => item.type === "buying").map(item => ({
-    id: String(item.id)
-  }))
-}
+// export const generateStaticParams = () => {
+//   return properties.filter(item => item.type === "buying").map(item => ({
+//     id: String(item.id)
+//   }))
+// }
 
-const page = async ({params}: {params: Promise<{id: string}>}) => {
 
-  const {id} = await params
-  const data = properties.find(item => String(item.id) === id)
+  type Propert = {
+    id: number
+    featured: boolean
+    address: string
+    price: number
+    description: string
+    images: string[]
+    type: string
+    size: string
+  }
 
+const page =  ({params}: {params: Promise<{id: string}>}) => {
+
+  const [data, setData] = useState<Propert>()
+
+  const fetchData = async () => {
+    const {id} = await params
+    const res = properties.find(item => String(item.id) === id)
+    setData(res)
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
 
   if(!data) return <div>Data Not Found</div>
 

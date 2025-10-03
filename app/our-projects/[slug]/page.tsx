@@ -1,22 +1,43 @@
+'use client';
+
 import { projects } from '@/constants'
 import { instrumentSerif } from '@/fonts/font'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 
-export const generateStaticParams = () => {
-  return projects.map(item => ({
-    slug: item.slug,   
-  }))
+// export const generateStaticParams = () => {
+//   return projects.map(item => ({
+//     slug: item.slug,   
+//   }))
+// }
+
+type proj = {
+  title: string
+    description:string  
+    price: number 
+    size: string
+    images: string[]
+    slug: string
+    location: string 
 }
 
+const page =  ({params}: {params: Promise<{slug: string}>}) => {
 
-const page = async ({params}: {params: Promise<{slug: string}>}) => {
+    const [data, setData] = useState<proj>()
+    
+      const fetchData = async () => {
+        const {slug} = await params
+        const res = projects.find(item => String(item.slug) === slug)
+        setData(res)
+      }
 
-    const {slug} = await params
-    const data = projects.find(item => item.slug === slug)
-
-    if(!data) return <main>No Data Found</main>
+       useEffect(() => {
+        fetchData()
+      }, [])
+    
+      if(!data) return <div>Data Not Found</div>
+      
 
   return (
     <main className='pt-25 pb-10'>
