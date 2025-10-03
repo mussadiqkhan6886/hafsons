@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const page = () => {
+const Projects = () => {
   return (
     <main>
       {/* Hero Section */}
@@ -68,4 +68,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Projects

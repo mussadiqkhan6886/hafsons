@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const page = () => {
+const InsightList = () => {
   return (
     <main className="pt-24 pb-16 px-6 md:px-12 lg:px-20 bg-gray-50">
       {/* Title */}
@@ -50,4 +50,4 @@ const page = () => {
   )
 }
 
-export default page
+export default InsightList

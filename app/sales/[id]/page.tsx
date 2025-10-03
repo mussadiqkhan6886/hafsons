@@ -23,7 +23,7 @@ import React, { useEffect, useState } from 'react'
     size: string
   }
 
-const page =  ({params}: {params: Promise<{id: string}>}) => {
+const Sale =  ({params}: {params: Promise<{id: string}>}) => {
 
   const [data, setData] = useState<Propert>()
 
@@ -74,4 +74,4 @@ const page =  ({params}: {params: Promise<{id: string}>}) => {
   )
 }
 
-export default page
+export default Sale

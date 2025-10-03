@@ -22,7 +22,7 @@ type proj = {
     location: string 
 }
 
-const page =  ({params}: {params: Promise<{slug: string}>}) => {
+const Project =  ({params}: {params: Promise<{slug: string}>}) => {
 
     const [data, setData] = useState<proj>()
     
@@ -65,4 +65,4 @@ const page =  ({params}: {params: Promise<{slug: string}>}) => {
   )
 }
 
-export default page
+export default Project

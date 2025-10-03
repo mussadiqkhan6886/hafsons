@@ -21,7 +21,7 @@ type insg = {
   slug: string
 }
 
-const page = async ({params}: {params: Promise<{slug: string}>}) => {
+const Insight = async ({params}: {params: Promise<{slug: string}>}) => {
 
     const [data, setData] = useState<insg>()
      
@@ -55,4 +55,4 @@ const page = async ({params}: {params: Promise<{slug: string}>}) => {
   )
 }
 
-export default page
+export default Insight
