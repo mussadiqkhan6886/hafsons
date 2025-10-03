@@ -21,7 +21,7 @@ type insg = {
   slug: string
 }
 
-const Insight = async ({params}: {params: Promise<{slug: string}>}) => {
+const Insight = ({params}: {params: Promise<{slug: string}>}) => {
 
     const [data, setData] = useState<insg>()
      
