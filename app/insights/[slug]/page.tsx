@@ -1,39 +1,19 @@
-'use client';
 
 import { insights } from '@/constants'
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
 
-// export const generateStaticParams = () => {
-//   return insights.map(item => ({
-//     slug: item.slug,   
-//   }))
-// }
-
-
-type insg = {
-  title: string
-  date: string
-  image: string
-  category: string
-  description: string
-  linkText: string
-  slug: string
+export const generateStaticParams = () => {
+  return insights.map(item => ({
+    slug: item.slug,   
+  }))
 }
 
-const Insight = ({params}: {params: Promise<{slug: string}>}) => {
 
-    const [data, setData] = useState<insg>()
-     
-       const fetchData = async () => {
+
+const Insight = async ({params}: {params: Promise<{slug: string}>}) => {
+
          const {slug} = await params
-         const res = insights.find(item => String(item.slug) === slug)
-         setData(res)
-       }
-     
-       useEffect(() => {
-         fetchData()
-       }, [])
+         const data = insights.find(item => String(item.slug) === slug)
      
        if(!data) return <div>Data Not Found</div>
 

@@ -1,5 +1,3 @@
-'use client';
-
 import SearchProperty from '@/components/SearchProperty'
 import { projects } from '@/constants'
 import { instrumentSerif } from '@/fonts/font'

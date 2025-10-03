@@ -1,5 +1,3 @@
-'use client';
-
 import Filteration from '@/components/Filteration'
 import PropertyCard from '@/components/PropertyCard'
 import SearchProperty from '@/components/SearchProperty'
